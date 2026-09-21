@@ -1,0 +1,145 @@
+---
+title: "HOSHOKU / ÜNDRRARE — Bootstrap Audit"
+description: "Read-only audit of the current environment, connected tools, and existing HOSHOKU/ÜNDRRARE assets. No content was published, generated, purchased, or modified to produce this report."
+---
+
+<Note>
+This is an **audit**, not an implementation. Every finding below is either a **grounded fact** (verified directly against a live tool or file), a **gap** (something that couldn't be checked from here), or a **proposal** (an idea that needs Pai's approval before anyone builds it). Nothing was invented as canon. No credits were spent, no products were changed, and nothing was published.
+</Note>
+
+## 1. Current environment
+
+- This session's git repository is `5enpai-ai/docs` — an **unmodified Mintlify starter kit template**. Before this audit, it contained only the default starter pages (`index.mdx`, `quickstart.mdx`) and a single "Initial commit." It held **no existing HOSHOKU/ÜNDRRARE content**.
+- This repo is documentation-only. It is not the ÜNDRRARE website's storefront theme, not the manga production repo, and not a VTuber asset repo — none of those appear to exist as GitHub repositories accessible to this session. If they exist elsewhere, they need to be added to this session's repo scope before Claude Code can read or edit them.
+- Account identities are fragmented across tools: the OpenArt account is `dnukester10@gmail.com`, the connected Shopify store's contact email is `shitokun05@gmail.com`. Worth knowing if login confusion ever comes up.
+
+## 2. Connected MCPs (tool integrations available to Claude Code)
+
+Confirmed connected and reachable this session: **Adobe (Firefly/Express/Acrobat suite), Canva, Figma, Google Drive, Higgsfield, Kling, Notion, OpenArt, Printify, Replit, Semrush, Shopify, Supabase, Trimble SketchUp, Windsor.ai, Zapier, GitHub, and Meta.**
+
+Important correction to the brief: the connected **"Meta" MCP is Meta's advertising/Business API** (ad campaigns, catalogs, pixels, Instagram/Facebook ad accounts) — it is **not** an interface to the consumer Meta AI app where HOSHOKU images are reportedly being generated. There is no tool in this session that can list, browse, or download the Meta AI image-generation history. See §12.
+
+## 3. OpenArt capabilities (the 20-question checklist from the brief)
+
+Checked read-only via `openart_account_get`, `openart_model_list`, `openart_creation_list`, `openart_project_list` — no generation calls were made.
+
+| # | Question | Finding |
+|---|---|---|
+| 1 | Available tools | `openart_generate_image`, `openart_generate_video`, `openart_model_list`, `openart_model_form_get`, `openart_model_cost`, `openart_creation_list`/`get`/`show`, `openart_project_list`/`create`, `openart_upload_sign`/`pick`/`import`/`list`/`metadata_get`, `openart_account_get`. |
+| 2 | Image generation | Yes — many models (see below). |
+| 3 | Video generation | Yes — Grok Imagine, Gemini Omni (Flash / 1.1), Veo 3.1, MiniMax H3 Max/Turbo, Kling 3 (Omni/3.0), Seedance 2.0/Fast/Mini/2.5, Wan 2.7/3.0, PixVerse V6. |
+| 4 | Image-to-image / reference support | Yes — most image models support `image2image` with reference images; several blend up to 9–14 references. |
+| 5 | Character consistency / reference support | Partial, per-model: e.g. Nano Banana Pro claims multi-subject consistency (up to 5 people) and multi-turn editing; Seedream/Wan/Kling support multi-image blending. There's no dedicated "character lock" primitive at the MCP level — consistency comes from reusing the same reference image(s) across calls, and from OpenArt's "Smart Shot" tool, which builds a full production/reference sheet from a scene description. |
+| 6 | Asset upload support | Yes — `openart_upload_sign` (direct PUT, headless-friendly), `openart_upload_pick`/`import` (widget-based), plus `openart_upload_list`/`metadata_get`. |
+| 7 | Asset retrieval/download support | Yes — `openart_creation_list`/`get`/`show` return past generations; results include URLs. |
+| 8 | Model selection | Yes — `openart_model_list` enumerates ~20+ models across image/video; `openart_model_form_get` returns per-model input schema. |
+| 9 | Prompt controls | Full text prompt per model form; some models support in-image text precision (GPT Image 2/2.5, Nano Banana). |
+| 10 | Aspect ratio controls | Present on a per-model basis via `openart_model_form_get` (not globally documented here — needs a form fetch per model to confirm exact options). |
+| 11 | Seed / control options | Not surfaced in the top-level model list; would need `openart_model_form_get` per model to confirm. |
+| 12 | Batch generation | Not exposed as a first-class batch tool on OpenArt's MCP (contrast with Higgsfield, which has explicit `_batch` tools). Each OpenArt call appears to be one generation. |
+| 13 | Editing / inpainting / outpainting | Not directly listed as a distinct mode; image2image with masked references / prompt edits covers some of this, but there's no dedicated inpaint/outpaint tool name on this MCP (Adobe's connector and Higgsfield's `outpaint_image` cover that need instead). |
+| 14 | Library / project management | Yes — Projects (`openart_project_list`/`create`) contain generations; the account currently has exactly one project, **"Personal Project"** (default). |
+| 15 | Limitations | Free plan, **25 credits** remaining. No generations exist yet under this OpenArt account (`openart_creation_list` returned empty) — so any HOSHOKU work already produced by "Meta AI" was **not** made through this OpenArt account. |
+| 16 | Can Claude Code retrieve outputs directly | Yes, via `openart_creation_get`/`show`, once something is generated. |
+| 17 | Auto-organization of outputs | Only by project — there's no tagging/folder system beyond that inside OpenArt itself. Real organization needs to happen outside OpenArt (see the Archive proposal in `architecture.mdx`). |
+| 18 | Does the MCP expose OpenArt's relevant models/features directly | Yes — model list, cost, and form schemas are all queryable before spending anything. |
+
+**Cost-control note:** 25 free credits is very little. No test generation was run in this pass, per the "ask before spending" rule. If Pai wants one tiny verification generation, that's a one-line approval away — but it will consume real credits on a plan that has almost none.
+
+## 4. Higgsfield API status
+
+Checked via `balance`, `list_workspaces`, `get_workflow_instructions`, `list_websites` — no generation calls were made.
+
+- **Plan: Free. Credits: 0.** Nothing can be generated on Higgsfield right now without a purchase.
+- One private workspace, no team workspaces.
+- No websites created yet (`list_websites` → empty).
+- Higgsfield ships a large **workflow library** (bundled SKILL.md-style playbooks), independent of credits, including: `ad-multiplier`, `brand-asset-creation`, `character-sheet`, `faceless-video`, `narrator`, `product-photoshoot`, `subtitles`, `thumbnail-generation`, five distinct `ugc-*-video` workflows, `video-editing`, and `website-builder-flow`.
+- Two of these are directly relevant to the brief and worth knowing about even before any credits are spent: **`character-sheet`** (turnarounds/model sheets — exactly the "character reference consistency" tool the manga pipeline will need) and **`website-builder-flow`** (Higgsfield can build and host a standalone website or app, separate from Shopify — relevant to §11/§22).
+- Higgsfield also exposes voice creation (`create_voice`, `list_voices`), TikTok publishing, and 3D scene-building tools — all dormant (no credits, nothing built) but worth knowing they exist for the future VTuber/music path.
+- **Overlap with OpenArt:** both do text/image-to-image and image/video generation. Higgsfield's edge is *workflows* (character sheets, website builder, ad/UGC pipelines, TikTok publishing) and *batch tools*; OpenArt's edge is breadth of individually selectable frontier models (Nano Banana, GPT Image, Seedream, etc.) at finer per-model control.
+- **Recommendation (unchanged from the brief's own framing):** OpenArt Plus = default hands-on lab; Higgsfield = selective specialist for character sheets, website building, and batch/automation — funded with a small top-up only once a concrete task justifies it.
+
+## 5. Printify access / API status
+
+Connection is healthy (`health_check` → `healthy`). Read-only calls only — no products, prices, or listings were touched.
+
+- **5 shops** are connected to this Printify account:
+
+| Shop | Sales channel | Products (Printify count) |
+|---|---|---|
+| ÜNDR | Shopify | 12 |
+| ÜNDRRARE | Shopify | 21 |
+| Hoshoku Shopify | Shopify | 51 |
+| UNDRRARE | Storefront (API-only) | 51 |
+| My Etsy Store | Etsy | 0 |
+
+- That's **five separate shop entities**, three of them Shopify-connected. This is a real fragmentation risk: it's unclear from here whether "ÜNDRRARE," "Hoshoku Shopify," and "UNDRRARE" (storefront) are duplicates of the same catalog, three distinct storefronts, or leftover test shops. **This needs Pai's clarification before anything is consolidated or touched.**
+- The account's **image upload library holds 50 images total** (paginated, only page 1 of 2 was pulled). Filenames split into two clear groups:
+  - Hand-named brand assets: `logo again 2.png`, `Punk Undr logo.svg` / `...white.svg`, `half hev half hell final.png` (two versions).
+  - A long run of `Untitled##_YYYYMMDDHHMMSS.png` files dated **Feb–Mar 2025**, which is the default export naming pattern from bulk AI image generation (consistent with the Meta AI batches described in the brief).
+- **This confirms the brief's own hypothesis in §7: Printify's upload library already functions as one of the "raw HOSHOKU asset pool" locations** — some of that AI-generated material was uploaded straight into Printify rather than living only inside Meta AI. It has not been catalogued as such; it just sits in the flat upload list.
+
+## 6. Existing project files (this repo)
+
+Before this audit: `AGENTS.md`, `README.md`, `docs.json`, `index.mdx`, `quickstart.mdx`, `LICENSE`, and a `logo/` folder — all default Mintlify starter content, none of it HOSHOKU-specific. No manga files, no world-bible files, no asset manifests existed here.
+
+## 7. Existing HOSHOKU assets (found this pass)
+
+Two verified sources of real, non-hypothetical HOSHOKU material:
+
+1. **Printify's upload library** (§5) — ~30+ likely-AI-generated PNGs from the Meta AI-style pipeline, unsorted.
+2. **Shopify product copy on the live store** (§8) — several products carry genuinely written in-universe lore text (quoted verbatim, not paraphrased, so nothing here is invented):
+   - *Ü-001 "Chibi" Crop Top*: "Where it started. Hoshoku in his original chibi form — fox half and rabbit half, drawn small and round before the character grew into..."
+   - *Ü-001 "Nirvana" Shirt*: "The third realm, and the one Ü-001 was actually reaching for. Hades is below, Midgard is where you stand, Nirvana is where the reach..." — this is a real, already-established three-realm cosmology (**Hades / Midgard / Nirvana**).
+   - *HOSHOKU Beanie (OG)*: `FILE NO. HOSHOKU-01 / ARTIFACT: Hoshoku Beanie (OG) — Cocoa/Cream / STATUS: ORIGIN FILE // FIRST EDITION / "This is where it started. Before the 2.0, before..."`
+   - *HOSHOKU Beanie (2.0)*: `ARCHIVE SYSTEM / FILE NO. HOSHOKU-02 / ARTIFACT: 🐰/🦊 Beanie 2.0 — Orange/Cream / CONDITION: ONE-OFF. HAND-LOGGED. / "Split down the middle, not front to back...."`
+   - *Ü-001 "Rare" Button Up*: "The piece that carries the brand's own name. Split topo pattern across the body, Ü stitched at the chest, collar finished..."
+
+**This is the single most important finding in this audit:** the "ARCHIVE SYSTEM / FILE NO. / ARTIFACT / STATUS / CONDITION" dossier voice that the brief asks Claude to *design* for the website archive (§3D, §16) **already exists** — it's live, in production, in real product copy. The website's archive/museum tone doesn't need to be invented; it needs to be *extended* from what's already shipping.
+
+## 8. Existing ÜNDRRARE website state
+
+- The connected Shopify store is **"ÜNDR 🐰/🦊"**, domain `undrrare.shop`, plan Basic, currency USD.
+- Collections already exist that read as a **narrative arc**, not just merchandising categories: `Ü-000 // CORE` (12 products), `Ü-001 // ENLIGHTENMENT` (6), `Ü-002 // SEEK` (9), plus `Current Chapter`, `HANDMADE // 🐰/🦊`, `HOSHOKU` (14 products), an empty `Accessories` collection, and the default `Home page`. The `Ü-002 // SEEK` collection even has a custom image: `hoshoku_floating.gif`.
+- Product statuses are mixed: a real mix of `ACTIVE`, `DRAFT`, and `ARCHIVED` items, plus **4 leftover Shopify "Example product" samples** that were never cleaned up (harmless, but worth a note — not touched here).
+- Several products are generic dropship blanks from vendor "ODMPOD" with no HOSHOKU branding — likely unrelated inventory tests, not part of the HOSHOKU line.
+- **Gap:** the Shopify MCP tools available here expose structured Admin API data (products, collections, orders, shop info) but **not theme/Liquid files**. The actual front-end code for the "world-select / press start" experience described in the brief cannot be audited from this session — it would need its own repository (theme code via Shopify CLI/GitHub, or a separate headless-storefront repo) added to this session's GitHub scope.
+
+## 9. Existing manga material
+
+None found. No manga repo, no panel/script files, no dedicated comic-layout tool connected. This is a real gap, not a light one — §14's production pipeline has no infrastructure yet beyond general-purpose image models.
+
+## 10. Existing VTuber material
+
+None found — no avatar rig files, no Live2D/VRM references, no voice assets in any inspected system. Higgsfield's `create_voice`/`list_voices` and 3D scene-builder tools exist but are unused. This is entirely greenfield.
+
+## 11. Existing product/fashion assets
+
+Covered in §5 and §7–8: the real, live catalog across ÜNDR/ÜNDRRARE/Hoshoku Shopify/UNDRRARE Printify shops, with the HOSHOKU Beanie OG/2.0 as the clear flagship items (both `ACTIVE`, both carrying the strongest existing lore copy).
+
+## 12. Existing Meta AI asset pipeline
+
+**This could not be directly inspected.** As noted in §2, the "Meta" MCP connected to this session is Meta's Business/Ads API, not the consumer Meta AI app that's reportedly producing ~10 HOSHOKU variations per run. There is no API surface here to list or download that generation history.
+
+What *is* verifiable: Printify's upload library (§5) contains filenames consistent with that pipeline's output, dated Feb–Mar 2025, meaning at least some of it has already been manually exported and re-uploaded once before. The rest of that pool (if larger) likely still lives only inside the Meta AI app or a personal camera roll and needs a manual export step from Pai — ideally into **Google Drive**, which is already connected to this session and can serve as the shared ingest folder Claude can read from directly (see `architecture.mdx` §Ingest).
+
+## 13. Duplicates / gaps / risks
+
+- **Shop fragmentation:** 3 Shopify-channel Printify shops (ÜNDR, ÜNDRRARE, Hoshoku Shopify) plus a separate storefront shop (UNDRRARE) — likely overlapping catalogs. Needs Pai to clarify which is canonical before any cleanup.
+- **Unsorted raw asset pool** inside Printify's upload library — 50 images, no tags, no folders, mixed hand-made brand marks and AI output.
+- **No manga or VTuber infrastructure** exists yet (greenfield, not a "fix," but worth being honest that §14/§13 of the brief describe systems that don't exist today).
+- **No direct read access to the Meta AI generation history** — a real integration gap, not something Claude Code can currently close without a manual export step.
+- **No theme/code-level access to the live storefront** — the "world" front-end described in the brief lives (if it exists) outside this session's reach.
+- **Stale Shopify sample products** (4x "Example product") — cosmetic, low priority, not touched.
+- **OpenArt (25 credits) and Higgsfield (0 credits)** are both too low to do meaningful generation work right now without a funding decision from Pai.
+
+## 14. What can be reused immediately (no spend required)
+
+- The **archive/dossier copywriting voice** already live on the Beanie OG/2.0 and Ü-001 Rare listings — this is a template, not a one-off, and can be extended to new product and lore pages without generating anything new.
+- The **three-realm cosmology** (Hades / Midgard / Nirvana) and the **fox/rabbit chibi origin** — both already-written canon fragments that a World Bible can be seeded with today, at zero cost.
+- The **Ü-000 CORE → Ü-001 ENLIGHTENMENT → Ü-002 SEEK** collection structure — a real, already-built "chapter" arc that a website content loop (§11 of the brief) can hang off of directly.
+- The ~30 unsorted AI-generated images already sitting in Printify's upload library — curation work, not generation work.
+
+## 15. What should not be touched
+
+Per the brief's own gates, and confirmed nowhere overridden by Pai in this pass: no Shopify products/collections/prices were changed; no Printify products were created, updated, published, or deleted; no OpenArt or Higgsfield generation credits were spent; nothing was purchased; no canon was invented beyond what's quoted verbatim above.

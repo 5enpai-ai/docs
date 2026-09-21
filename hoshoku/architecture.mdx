@@ -1,0 +1,125 @@
+---
+title: "HOSHOKU Ecosystem Architecture (Proposal)"
+description: "Proposed structures and workflows for the asset museum, world bible, and creative pipelines. Nothing here is built yet — every structure is a proposal for Pai to approve, adjust, or reject."
+---
+
+<Warning>
+Everything on this page is a **proposal**, built from what `audit.mdx` actually found. Nothing here has been created in Notion, Drive, Printify, or Shopify. No taxonomy, world, or character is canon until Pai says so.
+</Warning>
+
+## Ecosystem reference: what OSEANWORLD/YAMEII suggests, structurally
+
+Public research only (no lore imported): OSEANWORLD is Osean's larger digital-artist universe; **Yameii Online** is one recognizable virtual entity ("hero") living inside it, a Vocaloid-style rapper/singer with her own manga, YouTube anime, and music catalog, built with a co-creator (Deko). Sources: [virtualhumans.org](https://www.virtualhumans.org/human/yameii-online), [Dazed](https://www.dazeddigital.com/science-tech/article/56476/1/meet-oseanworld-the-internet-artist-tearing-up-the-metaverse-rulebook), [OSEANWORLD Wiki](https://oseanworld.fandom.com/wiki/OseanWorld), [Hypebae](https://hypebae.com/2022/7/yameii-online-oseanworld-virtual-musician-digital-influencer-deko-los-angeles-performance-info).
+
+The structural lesson, not the lore: **one universe (OSEANWORLD) → one recognizable entity as its door-in (Yameii) → that entity carries music + manga + video → the universe's own website/wiki holds the lore that doesn't fit anywhere else.** Mapped onto HOSHOKU without copying any of their specifics:
+
+```
+HOSHOKU (universe, unlimited manifestations)
+    ↓
+one manifestation chosen as the VTuber's face (a Pai decision, not a default)
+    ↓
+music / streams / video carry that entity
+    ↓
+audience discovers the wider universe through it
+    ↓
+website + world bible hold everything else (other manifestations, worlds, fashion, archive)
+```
+
+The role a wiki/wiki-style site plays for OSEANWORLD is exactly the role this `docs` repo can play for HOSHOKU — a versioned, linkable reference that both Pai and Claude can build against, rather than lore living only in scattered product descriptions.
+
+## Proposed HOSHOKU Asset Museum structure
+
+Adjusted from the brief's own sketch to match what `audit.mdx` §5/§7 actually found (real sources first, hypothetical categories second):
+
+```
+HOSHOKU ARCHIVE
+│
+├── SOURCES/                     (where a raw asset came from)
+│   ├── meta-ai/                 (needs manual export — see Ingest below)
+│   ├── printify-uploads/        (the ~30 Untitled##_*.png already found)
+│   ├── shopify-product-art/     (featured images already on live products)
+│   └── openart/ + higgsfield/   (empty today — will fill as work happens)
+│
+├── FORMS/                       (only categories seen in real material so far)
+│   ├── chibi/                   (verified: fox/rabbit chibi origin)
+│   └── unclassified/            (everything else, pending review)
+│
+├── PRODUCT-LINE/                (mirrors the real, live collection structure)
+│   ├── u-000-core/
+│   ├── u-001-enlightenment/
+│   └── u-002-seek/
+│
+└── STATUS/                      (see Asset Status System below — orthogonal tag, not a folder a file lives in twice)
+```
+
+`FORMS/` deliberately starts nearly empty — the brief is explicit that HOSHOKU is not one default mascot, and nothing found in this audit yet tells us which forms (alien, robotic, etc.) are real versus illustrative examples from the brief itself. **Do not pre-populate `FORMS/` with the brief's example descriptors** ("Alien HOSHOKU," "Nerd HOSHOKU," etc.) as if they were confirmed — they were explicitly flagged as illustrative-only.
+
+**Recommended home:** Google Drive (already connected this session) for the actual files, with a lightweight index — either a Notion database (also connected) or structured MDX/JSON in this repo — carrying id → source → form → status → tags, so Claude can query "what do we have" without re-scanning folders each time.
+
+## Proposed Ingest path (closing the Meta AI gap from audit.mdx §12)
+
+Since there is no API into the Meta AI app itself:
+
+1. Pai exports/downloads a batch from Meta AI manually (this is unavoidable — no tool here can reach past that app's UI).
+2. Pai drops the batch into a shared Google Drive folder (e.g. `HOSHOKU/Inbox/`).
+3. Claude Code reads that folder via the Google Drive connector, classifies what it can (dimensions, apparent style, any visible motifs), and proposes tags — **status defaults to `RAW`, never anything higher**, per the Asset Status System below.
+4. Pai reviews and promotes select assets toward `CANDIDATE`/`REFERENCE`.
+
+This keeps Meta AI as the generator (per the brief's own instruction not to replace it) while giving Claude a real, low-friction way to see what it's producing.
+
+## Proposed Asset Status System
+
+Exactly as specified in the brief, adopted as-is since it's already well-formed:
+
+`RAW → CANDIDATE → REFERENCE → REFINEMENT → REVIEW → APPROVED → PUBLISHED`, with `REJECTED`, `ARCHIVED`, `DUPLICATE`, and `UNKNOWN` as side-states.
+
+Hard rule carried over from the brief: **an asset being AI-generated or merely existing never implies `APPROVED`.** Every asset in Printify's upload library found in this audit is `RAW` or `UNKNOWN` until Pai says otherwise — including ones already used on live products (those are `PUBLISHED` for the product they're on, which is a separate fact from whether the underlying art has been formally reviewed as reference material).
+
+## Proposed World Bible structure
+
+Seeded **only** with what `audit.mdx` §7/§14 actually verified — everything else stays an empty section, not a guess:
+
+- **IDENTITY** — what HOSHOKU is/isn't (per brief §1, verbatim: unlimited multiverse identity, not a mascot; naming convention `[DESCRIPTOR] HOSHOKU`).
+- **WORLDS / COSMOLOGY** — the only verified fragment: a three-realm structure of **Hades / Midgard / Nirvana**, sourced from the live Ü-001 "Nirvana" product copy. Nothing else about these realms is established — visual language, inhabitants, and stories are all open.
+- **MANIFESTATIONS** — the verified chibi origin (fox half / rabbit half); everything past that (which forms are canon) is undecided and explicitly Pai's call per the brief.
+- **CHAPTERS** — the real, live structure: `Ü-000 CORE → Ü-001 ENLIGHTENMENT → Ü-002 SEEK`, each already carrying its own sub-motifs (Ü-001: Hades/Midgard/Nirvana, Best Friends, K-BOY; Ü-002: "Seek Ü"/"Seek Truth"/"Seek Reality," fox-and-rabbit/kitsune framing).
+- **VOICE/FORMAT** — the archive-dossier format already in production copy: `ARCHIVE SYSTEM / FILE NO. HOSHOKU-NN / ARTIFACT: … / STATUS or CONDITION: … / narrative line`. This is the one piece of the World Bible that's essentially done — it just needs to be written down as a reusable template.
+- **MEDIA / FASHION / ARCHIVE** — left empty pending the manga/VTuber/website work below; not invented here.
+
+**Recommended home:** Notion (connected), as a database with one row per entry and the fields above as properties — gives Pai a mobile-friendly way to add/approve entries (§18 mobile-first constraint) without needing Claude Code open.
+
+## Proposed OpenArt workflow
+
+1. Pick a model via `openart_model_list` + `openart_model_form_get` for the specific job (e.g. Nano Banana Pro for a multi-subject dossier portrait, Seedream for anime/manga-leaning panels).
+2. Write the full prompt against that model's form; confirm the exact prompt with Pai before spending credits, given the account currently has only 25.
+3. Generate one asset, review via `openart_creation_get`, then decide: promote into the Archive at `CANDIDATE`, or discard.
+4. Never batch-generate — OpenArt's MCP has no batch primitive, and the credit balance doesn't support it anyway right now.
+
+## Proposed Higgsfield workflow
+
+Higgsfield stays a **specialist**, not a default, until credits exist:
+
+- `character-sheet` workflow — the most valuable one for the manga/VTuber consistency problem; worth loading and reading (no cost) before the first manga page is attempted, so panel-to-panel consistency is designed in from the start rather than patched later.
+- `website-builder-flow` — a genuine alternative or companion to hand-built theme work for the "world" front-end described in the brief §11; worth a scoping conversation with Pai (does the world-front-door live as a Shopify theme, or as a Higgsfield-built site that links out to Shopify checkout?).
+- Everything else (video, TikTok publishing, voice) — dormant until there's a concrete deliverable and a funded credit balance.
+
+## Proposed manga workflow
+
+Data model per the brief §14, unchanged (it's already well-specified): `Chapter → Scene → Panel`, each panel carrying `Character/Form`, `Environment`, `Props`, `Wardrobe`, `Camera`, `Dialogue`, `Reference Images`, `Generation Prompt`, `Final Asset`, `Approval Status`. Recommend storing this as structured MDX or JSON in this repo (it's already a docs site) or as a Notion database — either way, one row/file per panel, so continuity references are queryable, not buried in a folder of loose images.
+
+First real step before any pipeline: **one manually-produced page**, start to finish, using the existing chibi-origin and Hades/Midgard/Nirvana canon fragments — establishing whether the character-sheet-driven consistency approach actually holds up panel-to-panel before automating anything.
+
+## Proposed VTuber workflow
+
+Sequenced, not parallelized:
+
+1. Pai decides which HOSHOKU manifestation (if any single one) is the VTuber's face — explicitly not automatic, per the brief's insistence that no form is a default.
+2. Only then: character-sheet generation for that specific manifestation (Higgsfield or OpenArt), voice direction (Higgsfield `create_voice`), and a minimal presence (one asset, one short clip) before committing to a recurring production cadence.
+
+## Proposed website content loop
+
+Given the real, already-built chapter structure (`CORE → ENLIGHTENMENT → SEEK`) and the archive-voice copy already in production:
+
+- Treat each existing chapter/collection as a page in the "world" — the content already exists; it needs a front-end frame, not new writing.
+- Rotate in curated Archive assets (once curated per the Asset Status System) as the "why come back tomorrow" hook from brief §11 — this is populated from curation work, not fresh generation, at least initially.
+- Commerce stays exactly as-is on Shopify (§8's gap notwithstanding) — this proposal does not touch checkout, cart, or product data.

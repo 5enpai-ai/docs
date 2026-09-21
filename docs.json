@@ -16,6 +16,14 @@
           "index",
           "quickstart"
         ]
+      },
+      {
+        "group": "HOSHOKU Bootstrap",
+        "pages": [
+          "hoshoku/audit",
+          "hoshoku/architecture",
+          "hoshoku/bootstrap-plan"
+        ]
       }
     ],
     "global": {
