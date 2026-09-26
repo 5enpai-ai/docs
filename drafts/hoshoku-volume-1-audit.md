@@ -30,7 +30,9 @@ No Volume 1 outline, chapter plan, or page/panel script exists in any source.
 
 ## A. Manga canon decisions
 
-### A1. Eye colour and face marks → **Position A** (RESOLVED on manga evidence; confirm to close the CANON LOCK)
+### A1. Eye colour and face marks → **Position A: LOCKED by D'nuke, 2026-09-26**
+
+The Notion CANON LOCK entry still reads CONFLICTED and needs updating.
 
 | Half | Side | Iris | Mark |
 |---|---|---|---|
@@ -42,7 +44,8 @@ Evidence, manga-specific first:
 1. **Notion CANON LOCK, Position A.** D'nuke stated this directly, with hex codes, in the **graphic-novel worldbuilding thread**. This is the only manga-specific written statement. It is also the version already locked on the Brand Bible §4 HOSHOKU page.
 2. **The manga lettering system** (Canva style guide and Brand Bible) codes Bunni **red** and Renard **blue**. The fused bubble is red LEFT / blue RIGHT. This supports the colour-per-side mapping (not the marks).
 3. **Drive `hoshoku_split_stitched_v2.png`** shows the rabbit LEFT with a red eye and the fox RIGHT with a blue eye. This is brand/icon art with no marks, so it supports eye colour only.
-4. **Position B** comes from the v1.0 *ÜNDR / Akashic Records* brand bible. That document covers Era A (archive/museum) and is not manga-specific. D'nuke has also flagged it as an outdated placeholder. It is outweighed.
+4. **Manga chapter emblem** (`right_strip_hoshoku_emblem_white`, on the Chapter 1 and 2 pages) shows the rabbit half LEFT with a red eye. The fox-side eye is too small to read. This is the only depiction of HOSHOKU inside the manga pages.
+5. **Position B** comes from the v1.0 *ÜNDR / Akashic Records* brand bible. That document covers Era A (archive/museum) and is not manga-specific. D'nuke has also flagged it as an outdated placeholder. It is outweighed.
 
 Caveat: the **mark shapes** rest on source 1 alone. No manga page yet shows HOSHOKU's face.
 
@@ -146,7 +149,7 @@ Budget fit: 4 new chapters at ~45 panels is ~180 new panels, the practical ceili
 
 ## E. Open canon questions
 
-1. **Close the eye/mark CANON LOCK to Position A?** (A1.) I'll update Notion on your yes.
+1. ~~Close the eye/mark CANON LOCK to Position A?~~ **Answered: LOCKED** (2026-09-26).
 2. **Broly's hair:** is the before/after-blackout change intentional? If yes, tall-format pages 16 and 18 need correcting. If no, which look is canon for the bootcamp pages?
 3. **Is Volume 1 the same as arc 1?** Which endpoint (D)?
 4. **How many chapters** is Volume 1? (5 is proposed.)
@@ -164,6 +167,9 @@ Budget fit: 4 new chapters at ~45 panels is ~180 new panels, the practical ceili
 16. **The HOSHOKU 12-expression sheet** (APPROVED; Notion says "file not yet attached"): where is the file?
 
 ## F. Next zero-credit task
+
+> **Done 2026-09-26:** see `drafts/hoshoku-ch1-ch2-continuity-script.md`.
+
 
 **An as-built script extraction of Chapter 1 and the Chapter 2 opening.** For each existing panel, record:
 
