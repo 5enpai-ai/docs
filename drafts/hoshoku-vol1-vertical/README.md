@@ -160,6 +160,7 @@ Set `HOSHOKU_SOURCE_CAPTIONS=1` to render without the PROPOSED Broly-voice capti
 
 ## Next
 
-- **Canva merge:** combining the parts into one Canva design still needs your approval.
+- **Canva merge: deferred.** The modular locked set (cover + parts 01–10) is the deliverable. Combining it into one design would create a new derivative design, so it stays a separate, explicit action.
 - **Chapter 2:** held after the mirror scene until the story beats (E in the audit) are set. Nothing past page 14 has been generated.
-- **Chapter 1:** locked. Packaging and uploading only; no creative iteration.
+- **Chapter 1: production CLOSED** (2026-09-26). The 55 slices are in locked reading order.
+- **Project focus: Chapter 2 story development.** Define the beats after the mirror scene first; generate nothing until they are set.
