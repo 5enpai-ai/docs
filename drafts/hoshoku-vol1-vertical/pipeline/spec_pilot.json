@@ -1,0 +1,274 @@
+[
+ {
+  "type": "card",
+  "kind": "open",
+  "lines": [
+   [
+    "HOSHOKU",
+    "logo",
+    [
+     245,
+     240,
+     232
+    ]
+   ],
+   [
+    "VOL. 1 \u2014 FLASHBACK",
+    "mono",
+    [
+     196,
+     20,
+     20
+    ]
+   ],
+   [
+    "CH. 1 \u2014 RECRUITMENT DAY",
+    "marker",
+    [
+     245,
+     240,
+     232
+    ]
+   ]
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 120
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_1a.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_1b.png",
+  "letters": [
+   {
+    "k": "broly",
+    "t": "No turning back now.",
+    "x": 0.72,
+    "y": 0.32,
+    "tx": 0.62,
+    "ty": 0.52,
+    "maxw": 260
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 200
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_1c.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "BOOTCAMP // DAY 8",
+    "body": "Legs: gone. Pride: leaving.",
+    "x": 0.05,
+    "y": 0.035,
+    "maxw": 420
+   },
+   {
+    "k": "shout",
+    "t": "Keep moving\u2026",
+    "x": 0.24,
+    "y": 0.3,
+    "tx": 0.0,
+    "ty": 0.22,
+    "size": 26,
+    "maxw": 200
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 160
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2a.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "DAY 8 >> DAY 34",
+    "body": "Same drills. Newer bruises.",
+    "x": 0.05,
+    "y": 0.03,
+    "maxw": 420
+   },
+   {
+    "k": "thought",
+    "t": "(Breathe. Don't panic.)",
+    "x": 0.72,
+    "y": 0.44,
+    "tx": 0.52,
+    "ty": 0.5,
+    "maxw": 190,
+    "size": 28
+   },
+   {
+    "k": "sfx",
+    "t": "SPLASH!",
+    "x": 0.5,
+    "y": 0.93,
+    "size": 110,
+    "big": false,
+    "rot": -6
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2b.png",
+  "letters": [
+   {
+    "k": "thought",
+    "t": "(No excuses.)",
+    "x": 0.72,
+    "y": 0.1,
+    "tx": 0.4,
+    "ty": 0.14,
+    "maxw": 200,
+    "size": 28
+   },
+   {
+    "k": "shout",
+    "t": "MOVE!",
+    "x": 0.2,
+    "y": 0.6,
+    "tx": 0.0,
+    "ty": 0.62,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2c.png",
+  "letters": [
+   {
+    "k": "shout",
+    "t": "FASTER!!",
+    "x": 0.74,
+    "y": 0.14,
+    "tx": 0.99,
+    "ty": 0.05,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2d.png",
+  "letters": [
+   {
+    "k": "shout",
+    "t": "AGAIN!!",
+    "x": 0.2,
+    "y": 0.1,
+    "tx": 0.0,
+    "ty": 0.03,
+    "size": 40
+   },
+   {
+    "k": "sfx",
+    "t": "HUFF",
+    "x": 0.25,
+    "y": 0.45,
+    "size": 60,
+    "big": false,
+    "rot": -10
+   },
+   {
+    "k": "sfx",
+    "t": "HUFF",
+    "x": 0.84,
+    "y": 0.38,
+    "size": 60,
+    "big": false,
+    "rot": 8
+   },
+   {
+    "k": "sfx",
+    "t": "HUFF",
+    "x": 0.2,
+    "y": 0.8,
+    "size": 56,
+    "big": false,
+    "rot": -4
+   },
+   {
+    "k": "broly",
+    "t": "Just\u2026 one more round.",
+    "x": 0.72,
+    "y": 0.9,
+    "tx": 0.62,
+    "ty": 0.62,
+    "maxw": 220,
+    "size": 28
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2e.png",
+  "letters": [
+   {
+    "k": "sfx",
+    "t": "CLACK",
+    "x": 0.2,
+    "y": 0.1,
+    "size": 50,
+    "big": false,
+    "rot": -12
+   },
+   {
+    "k": "sfx",
+    "t": "BANG!",
+    "x": 0.3,
+    "y": 0.42,
+    "size": 120,
+    "big": true,
+    "rot": -10
+   },
+   {
+    "k": "shout",
+    "t": "Eyes forward. Squeeze\u2014",
+    "x": 0.3,
+    "y": 0.88,
+    "tx": 0.0,
+    "ty": 0.97,
+    "size": 26,
+    "maxw": 210
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 200
+ }
+]

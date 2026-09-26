@@ -1,0 +1,1028 @@
+[
+ {
+  "type": "card",
+  "kind": "open",
+  "lines": [
+   [
+    "HOSHOKU",
+    "logo",
+    [
+     245,
+     240,
+     232
+    ]
+   ],
+   [
+    "VOL. 1 \u2014 FLASHBACK",
+    "mono",
+    [
+     196,
+     20,
+     20
+    ]
+   ],
+   [
+    "CH. 1 \u2014 RECRUITMENT DAY",
+    "marker",
+    [
+     245,
+     240,
+     232
+    ]
+   ]
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 120
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_1a.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_1b.png",
+  "letters": [
+   {
+    "k": "broly",
+    "t": "No turning back now.",
+    "x": 0.72,
+    "y": 0.32,
+    "tx": 0.62,
+    "ty": 0.52,
+    "maxw": 260
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 200
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_1c.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "BOOTCAMP // DAY 8",
+    "body": "Legs: gone. Pride: leaving.",
+    "x": 0.05,
+    "y": 0.035,
+    "maxw": 420
+   },
+   {
+    "k": "shout",
+    "t": "Keep moving\u2026",
+    "x": 0.24,
+    "y": 0.3,
+    "tx": 0.0,
+    "ty": 0.22,
+    "size": 26,
+    "maxw": 200
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 160
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2a.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "DAY 8 >> DAY 34",
+    "body": "Same drills. Newer bruises.",
+    "x": 0.05,
+    "y": 0.03,
+    "maxw": 420
+   },
+   {
+    "k": "thought",
+    "t": "(Breathe. Don't panic.)",
+    "x": 0.72,
+    "y": 0.44,
+    "tx": 0.52,
+    "ty": 0.5,
+    "maxw": 190,
+    "size": 28
+   },
+   {
+    "k": "sfx",
+    "t": "SPLASH!",
+    "x": 0.5,
+    "y": 0.93,
+    "size": 110,
+    "big": false,
+    "rot": -6
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2b.png",
+  "letters": [
+   {
+    "k": "thought",
+    "t": "(No excuses.)",
+    "x": 0.72,
+    "y": 0.1,
+    "tx": 0.4,
+    "ty": 0.14,
+    "maxw": 200,
+    "size": 28
+   },
+   {
+    "k": "shout",
+    "t": "MOVE!",
+    "x": 0.2,
+    "y": 0.6,
+    "tx": 0.0,
+    "ty": 0.62,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2c.png",
+  "letters": [
+   {
+    "k": "shout",
+    "t": "FASTER!!",
+    "x": 0.74,
+    "y": 0.14,
+    "tx": 0.99,
+    "ty": 0.05,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2d.png",
+  "letters": [
+   {
+    "k": "shout",
+    "t": "AGAIN!!",
+    "x": 0.2,
+    "y": 0.1,
+    "tx": 0.0,
+    "ty": 0.03,
+    "size": 40
+   },
+   {
+    "k": "sfx",
+    "t": "HUFF",
+    "x": 0.25,
+    "y": 0.45,
+    "size": 60,
+    "big": false,
+    "rot": -10
+   },
+   {
+    "k": "sfx",
+    "t": "HUFF",
+    "x": 0.84,
+    "y": 0.38,
+    "size": 60,
+    "big": false,
+    "rot": 8
+   },
+   {
+    "k": "sfx",
+    "t": "HUFF",
+    "x": 0.2,
+    "y": 0.8,
+    "size": 56,
+    "big": false,
+    "rot": -4
+   },
+   {
+    "k": "broly",
+    "t": "Just\u2026 one more round.",
+    "x": 0.72,
+    "y": 0.9,
+    "tx": 0.62,
+    "ty": 0.62,
+    "maxw": 220,
+    "size": 28
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_2e.png",
+  "letters": [
+   {
+    "k": "sfx",
+    "t": "CLACK",
+    "x": 0.2,
+    "y": 0.1,
+    "size": 50,
+    "big": false,
+    "rot": -12
+   },
+   {
+    "k": "sfx",
+    "t": "BANG!",
+    "x": 0.3,
+    "y": 0.42,
+    "size": 120,
+    "big": true,
+    "rot": -10
+   },
+   {
+    "k": "shout",
+    "t": "Eyes forward. Squeeze\u2014",
+    "x": 0.3,
+    "y": 0.88,
+    "tx": 0.0,
+    "ty": 0.97,
+    "size": 26,
+    "maxw": 210
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 260
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_3a.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "BOOTCAMP // DAY 8",
+    "body": "Lights out. My head didn't get the memo.",
+    "x": 0.05,
+    "y": 0.04,
+    "maxw": 430
+   },
+   {
+    "k": "broly",
+    "t": "Can\u2019t\u2026 slow down\u2026",
+    "x": 0.66,
+    "y": 0.33,
+    "tx": 0.34,
+    "ty": 0.42,
+    "maxw": 220,
+    "size": 28
+   }
+  ],
+  "crop": [
+   0,
+   355,
+   1856,
+   2304
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 120
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_3b.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "02:13 AM // COURTYARD",
+    "body": "Needed air. Any air.",
+    "x": 0.05,
+    "y": 0.05,
+    "maxw": 420
+   }
+  ],
+  "crop": [
+   0,
+   547,
+   1792,
+   2400
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_3c.png",
+  "letters": [
+   {
+    "k": "thought",
+    "t": "(Just\u2026 breathe.)",
+    "x": 0.7,
+    "y": 0.1,
+    "tx": 0.52,
+    "ty": 0.2,
+    "maxw": 190,
+    "size": 28
+   }
+  ],
+  "crop": [
+   0,
+   0,
+   1149,
+   2400
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_3d.png",
+  "letters": [
+   {
+    "k": "broly",
+    "t": "\u2026I\u2019m gonna\u2014",
+    "x": 0.74,
+    "y": 0.9,
+    "tx": 0.52,
+    "ty": 0.7,
+    "maxw": 220,
+    "size": 30
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_3e.png",
+  "letters": [
+   {
+    "k": "shout",
+    "t": "Whoa! Easy\u2014",
+    "x": 0.24,
+    "y": 0.06,
+    "tx": 1.0,
+    "ty": 0.28,
+    "size": 30,
+    "maxw": 220
+   }
+  ],
+  "crop": [
+   0,
+   650,
+   1536,
+   2533
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 200
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_4a.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "PRE-BLACKOUT",
+    "body": "Last thing I remember clearly.",
+    "x": 0.04,
+    "y": 0.04,
+    "maxw": 400
+   },
+   {
+    "k": "sfx",
+    "t": "TSS",
+    "x": 0.4,
+    "y": 0.36,
+    "size": 70,
+    "big": false,
+    "rot": -12
+   },
+   {
+    "k": "other",
+    "t": "Hold still.",
+    "x": 0.3,
+    "y": 0.86,
+    "tx": 1.0,
+    "ty": 0.97,
+    "maxw": 200,
+    "size": 30
+   }
+  ],
+  "crop": [
+   175,
+   0,
+   1688,
+   2304
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_4b.png",
+  "letters": [
+   {
+    "k": "ambient",
+    "t": "beep\u2026",
+    "x": 0.6,
+    "y": 0.18,
+    "size": 34
+   },
+   {
+    "k": "ambient",
+    "t": "drip\u2026",
+    "x": 0.12,
+    "y": 0.58,
+    "size": 30
+   },
+   {
+    "k": "ambient",
+    "t": "drip\u2026",
+    "x": 0.62,
+    "y": 0.8,
+    "size": 30
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_4c.png",
+  "letters": [
+   {
+    "k": "ambient",
+    "t": "drip\u2026",
+    "x": 0.1,
+    "y": 0.2,
+    "size": 28,
+    "alpha": 110
+   },
+   {
+    "k": "ambient",
+    "t": "drip\u2026",
+    "x": 0.6,
+    "y": 0.35,
+    "size": 26,
+    "alpha": 90
+   },
+   {
+    "k": "ambient",
+    "t": "drip\u2026",
+    "x": 0.2,
+    "y": 0.55,
+    "size": 24,
+    "alpha": 70
+   },
+   {
+    "k": "ambient",
+    "t": "drip\u2026",
+    "x": 0.65,
+    "y": 0.72,
+    "size": 22,
+    "alpha": 50
+   }
+  ]
+ },
+ {
+  "type": "black",
+  "h": 1100,
+  "letters": [
+   {
+    "k": "ambient",
+    "t": "\u00b7 \u00b7 \u00b7 \u00b7 \u00b7 \u00b7",
+    "x": 0.38,
+    "y": 0.48,
+    "size": 34,
+    "alpha": 220
+   }
+  ]
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_5b.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "DAY: UNKNOWN // LOCATION: UNKNOWN",
+    "body": "Me: \u2026also unknown.",
+    "x": 0.04,
+    "y": 0.04,
+    "maxw": 440
+   },
+   {
+    "k": "ambient",
+    "t": "ngh\u2026",
+    "x": 0.08,
+    "y": 0.72,
+    "size": 52,
+    "alpha": 200
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_5c.png",
+  "letters": [
+   {
+    "k": "broly",
+    "t": "Where\u2026 am I\u2026?",
+    "x": 0.76,
+    "y": 0.8,
+    "tx": 0.56,
+    "ty": 0.62,
+    "maxw": 200,
+    "size": 30
+   }
+  ],
+  "crop": [
+   0,
+   0,
+   1856,
+   1940
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 200
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_6a.png",
+  "letters": [
+   {
+    "k": "caption",
+    "head": "MILITARY MEDICAL WING",
+    "body": "Too clean. Too quiet.",
+    "x": 0.05,
+    "y": 0.04,
+    "maxw": 420
+   }
+  ],
+  "crop": [
+   0,
+   330,
+   1792,
+   2297
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_6b.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_6c.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_6d.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_6e.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 200
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_7a.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 900
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_7d.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 200
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_8a.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_8b.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_8c.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_8d.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_8e.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_9a.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_9b.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_9c.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_9d.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_9e.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 160
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_10a.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_10b.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_10c.png",
+  "letters": [],
+  "crop": [
+   33,
+   91,
+   1764,
+   2316
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_10d.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 160
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_11a.png",
+  "letters": [],
+  "crop": [
+   84,
+   0,
+   1779,
+   2304
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_11b.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_11c.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 0
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_12.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 200
+ },
+ {
+  "type": "endcard",
+  "lines": [
+   [
+    "END OF CH. 1",
+    "mono",
+    [
+     196,
+     20,
+     20
+    ]
+   ],
+   [
+    "FLASHBACK",
+    "marker",
+    [
+     245,
+     240,
+     232
+    ]
+   ]
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 300
+ },
+ {
+  "type": "card",
+  "kind": "open",
+  "lines": [
+   [
+    "HOSHOKU",
+    "logo",
+    [
+     245,
+     240,
+     232
+    ]
+   ],
+   [
+    "VOL. 1 \u2014 FLASHBACK",
+    "mono",
+    [
+     196,
+     20,
+     20
+    ]
+   ],
+   [
+    "CH. 2",
+    "marker",
+    [
+     245,
+     240,
+     232
+    ]
+   ]
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 120
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_13a.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_13b.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_13c.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_13d.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_13e.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 200
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_14a.png",
+  "letters": []
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_14b.png",
+  "letters": [
+   {
+    "k": "num",
+    "t": "#007",
+    "x": 0.38,
+    "y": 0.08,
+    "size": 80
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_14c.png",
+  "letters": [
+   {
+    "k": "num",
+    "t": "#614",
+    "x": 0.74,
+    "y": 0.06,
+    "size": 70
+   }
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 70
+ },
+ {
+  "type": "panel",
+  "img": "gen/v_14d.png",
+  "letters": [
+   {
+    "k": "num",
+    "t": "#389",
+    "x": 0.4,
+    "y": 0.03,
+    "size": 70,
+    "col": [
+     235,
+     235,
+     240
+    ]
+   }
+  ],
+  "crop": [
+   0,
+   555,
+   1856,
+   2304
+  ]
+ },
+ {
+  "type": "gap",
+  "h": 260
+ },
+ {
+  "type": "endcard",
+  "lines": [
+   [
+    "TO BE CONTINUED",
+    "mono",
+    [
+     196,
+     20,
+     20
+    ]
+   ]
+  ]
+ }
+]

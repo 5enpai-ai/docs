@@ -152,7 +152,7 @@ Overlays used on this page: `overlay_vignette_edges`, `overlay_dust_particles`.
 
 #### Panel 2-b
 
-- **Source artwork:** `Panel 06` (`MAG9WkdyrGw`)
+- **Source artwork:** `Panel 05` (`MAG9JE5dQvk`)
 - **Setting/time:** Rope climb up a wooden wall. Daylight/sunset.
 - **Characters:** Broly (ART); two recruits running below
 - **Appearance / hair:**
@@ -166,7 +166,7 @@ Overlays used on this page: `overlay_vignette_edges`, `overlay_dust_particles`.
 
 #### Panel 2-c
 
-- **Source artwork:** `Panel 05` (`MAG9JE5dQvk`)
+- **Source artwork:** `Panel 06` (`MAG9WkdyrGw`)
 - **Setting/time:** Obstacle course: wooden barrier, dust. Sunset.
 - **Characters:** One recruit in **tan/light camo**. Identity **UNVERIFIED**: the face is partly obscured and the uniform colour differs from Broly's olive fatigues elsewhere.
 - **Appearance / hair:** Short light hair; **UNVERIFIED**.
