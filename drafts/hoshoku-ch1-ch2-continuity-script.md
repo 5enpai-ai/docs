@@ -169,7 +169,7 @@ Overlays used on this page: `overlay_vignette_edges`, `overlay_dust_particles`.
 - **Source artwork:** `Panel 06` (`MAG9WkdyrGw`)
 - **Setting/time:** Obstacle course: wooden barrier, dust. Sunset.
 - **Characters:** One recruit in **tan/light camo**. Identity **UNVERIFIED**: the face is partly obscured and the uniform colour differs from Broly's olive fatigues elsewhere.
-- **Appearance / hair:** Short light hair; **UNVERIFIED**.
+- **Appearance / hair:** OBSERVED: short, tousled, swept hair, light warm brown/copper under the sepia grade. Lighter skin tone than Broly elsewhere. No locs. Exact hair colour is **UNVERIFIED** (the thumbnail is too small).
 - **Action:** Climbs over the barrier.
 - **Text / SFX:** "FASTER!!"
 - **Lettering:** `SHOUT-BURST`; speaker **UNVERIFIED** (off-panel)
@@ -199,7 +199,7 @@ Overlays used on this page: `overlay_vignette_edges`, `overlay_dust_particles`.
 - **Action:** Aims and fires.
 - **Text / SFX:**
   - "CLACK" (`sfx_clack`) and "BANG!"
-  - Burst text read as **"Eyes forward. Squeeze—"**: **UNVERIFIED** (small baked text)
+  - Burst text: **"Eyes forward. Squeeze—"**: **VERIFIED** against the source (2026-09-26). The text layer on the original page 2 was enlarged in a discarded Canva draft; nothing was saved.
 - **Lettering:**
   - "CLACK", "BANG!": `SFX-WHITE`
   - Burst text: `SHOUT-BURST`; speaker **UNVERIFIED**
@@ -220,7 +220,7 @@ Layout: a large top-left panel; two stacked panels top-right; two panels on the 
 - **Action:** Sits on a bunk, head down, hands clasped.
 - **Text / SFX:**
   - Caption: "BOOTCAMP — DAY 8" (`p01_p3_caption_bootcamp_day_8`)
-  - Bubble: "Can't… slow d[own]…". Partly hidden: the caption bar covers the second line, so the full reading is **UNVERIFIED**.
+  - Bubble: "Can't… slow down…". In the published page the caption bar covers the second line. The full text **"Can't… slow down…"** is **VERIFIED** from the source text layer (2026-09-26). The caption was lifted in a discarded Canva draft; nothing was saved.
 - **Lettering:**
   - Caption: `CAPTION-TEAL`
   - Bubble: `SPEECH-ROUND`; tail toward Broly, so the speaker is Broly **(by tail)**
@@ -843,7 +843,7 @@ What the ledger shows (OBSERVED only):
 ### CONTRADICTORY (sources disagree)
 
 1. **Hair:** short twists and long locs alternate after the blackout (6-c vs 6-d, 8-b vs 5-c, 13-c vs 13-a). Pages 1–13 conflict with the canon note's "ALWAYS" ombré dreads.
-2. **The range line:** the published baked text reads as "Eyes forward. Squeeze—" (UNVERIFIED), while the tall page has the live text "Two forward squads—".
+2. **The range line:** the published source reads "Eyes forward. Squeeze—" (**VERIFIED** 2026-09-26 from the source text layer). The Aug-2026 tall page has "Two forward squads—", but it is not a source for the vertical edition.
 3. **Tall pages vs published spreads:** setting (neon "ENLIST" vs "RECRUITING CENTER"), time of day (P1 day vs dusk; P7 night vs sunset), indoor vs outdoor pool, the added drill instructor, the dropped "→ DAY 34", and a changed art style.
 4. **P1 alt text** ("at dusk") vs the image (clear daytime sky).
 5. **One line, three letterings:** "no turning back now" is a speech bubble (published), a caption box (tall, `DAG9IhSY4Xo`), and a parenthesised thought (tall, `DAHR7QwZmf8`).

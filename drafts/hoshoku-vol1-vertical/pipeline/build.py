@@ -1,6 +1,9 @@
 import json, sys
 from PIL import Image, ImageDraw
 from letter import *
+import os
+# HOSHOKU_SOURCE_CAPTIONS=1 drops the PROPOSED Broly-voice caption bodies and keeps only the source info headers
+SOURCE_ONLY = os.environ.get('HOSHOKU_SOURCE_CAPTIONS') == '1'
 
 def title_card(kind, lines):
     h = 900 if kind == 'open' else 600
@@ -33,7 +36,7 @@ def render(spec, out):
         for L in b.get('letters', []):
             k = L['k']; x, y = L['x'] * pw, L['y'] * ph
             tgt = (L['tx'] * pw, L['ty'] * ph) if 'tx' in L else None
-            if k == 'caption': caption(im, L.get('head', ''), L.get('body', ''), x, y, L.get('maxw', 520))
+            if k == 'caption': caption(im, L.get('head', ''), '' if SOURCE_ONLY else L.get('body', ''), x, y, L.get('maxw', 520))
             elif k == 'sfx': sfx(im, L['t'], x, y, L.get('size', 90), L.get('big', True), L.get('rot', -8))
             elif k == 'num':
                 d=ImageDraw.Draw(im); f=CAP_BODY(L.get('size',64)); d.text((x,y),L['t'],font=f,fill=tuple(L.get('col',[40,40,48])))
