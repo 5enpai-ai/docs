@@ -248,7 +248,7 @@ Layout: a large top-left panel; two stacked panels top-right; two panels on the 
 - **Appearance / hair:** Same as 3-b.
 - **Action:** Hunched over, exhaling.
 - **Text / SFX:** "Just… breathe."
-- **Lettering:** Cloud-shaped bubble. Whether it is a thought or speech is **UNVERIFIED**: no clear dot chain is visible.
+- **Lettering:** **VERIFIED** (2026-09-26): the bubble graphic `MAGeHE3VgSo`, isolated in a Canva draft that was then discarded, is a closed, scalloped cloud with **no tail and no dot trail**. The text has no parentheses. Whether it is a thought or speech is **UNRESOLVED**: the cloud shape is the only cue.
 
 #### Panel 3-d
 

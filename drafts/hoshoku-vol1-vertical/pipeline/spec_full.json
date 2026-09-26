@@ -335,11 +335,9 @@
   "letters": [
    {
     "k": "thought",
-    "t": "(Just\u2026 breathe.)",
+    "t": "Just\u2026 breathe.",
     "x": 0.7,
     "y": 0.1,
-    "tx": 0.52,
-    "ty": 0.2,
     "maxw": 190,
     "size": 28
    }

@@ -21,6 +21,17 @@ A vertical webtoon recreation of the existing manga (Canva `DAG9IhSY4Xo`, pages 
 
 Before and after for gates 2 and 4: `reference/gates_2_4_before_after.jpg`.
 
+### Final lettering and visual items (2026-09-26)
+
+| Item | Status | What was done |
+|---|---|---|
+| 3c bubble | ✅ **Lettered as in the source** | I isolated the bubble graphic (`MAGeHE3VgSo`) in a Canva draft that I then discarded. It is a **closed, scalloped cloud with no tail and no dot trail**, and the source text is **"Just… breathe."** with no parentheses. The vertical edition had added parentheses and a dot trail, and both are now removed. The cloud outline matches the source. Whether the line is a thought or speech is still **UNRESOLVED**: the source gives a cloud shape, but no trail or parentheses to confirm it. |
+| 14a number | ✅ **Left blank** | The number is unreadable in the source, so none was added. |
+| 14c clothing | ✅ **Dark top restored** | Edit pass using the original 14c as the reference. He now wears a plain dark charcoal crew-neck top, and nothing else changed (40 credits). See `reference/14c_before_after.jpg`. |
+
+**Credit hold:** no more credits will be spent on Chapter 1 until the remaining lettering decisions are made.
+
+
 ## Decisions applied (D'nuke, 2026-09-26)
 
 | Topic | Decision |
@@ -84,7 +95,7 @@ Captions are **PROPOSED** (Broly's voice). Everything else is carried over from 
 | 2e | CLACK, BANG!. Off-panel shout: "Eyes forward. Squeeze—" (verified) |
 | 3a | CAPTION `BOOTCAMP // DAY 8`: *Lights out. My head didn't get the memo.* Broly: "Can't… slow down…" (verified) |
 | 3b | CAPTION `02:13 AM // COURTYARD`: *Needed air. Any air.* |
-| 3c | Thought: "(Just… breathe.)" ⚠ |
+| 3c | Cloud bubble (as in the source; no trail): "Just… breathe." |
 | 3d | Broly: "…I'm gonna—" |
 | 3e | Off-panel (the arm's owner): "Whoa! Easy—" |
 | 4a | CAPTION `PRE-BLACKOUT`: *Last thing I remember clearly.* TSS. Off-panel: "Hold still." |
@@ -104,12 +115,12 @@ Captions are **PROPOSED** (Broly's voice). Everything else is carried over from 
 
 1. **2e:** ~~UNVERIFIED~~ **Resolved (gate 1):** the source text layer reads "Eyes forward. Squeeze—".
 2. **3a:** ~~UNVERIFIED~~ **Resolved (gate 3):** the source text layer reads "Can't… slow down…" in full.
-3. **3c:** the original shape was cloud-like with no dot trail, so the thought-vs-speech call is UNVERIFIED. It's lettered as a thought.
-4. **14a:** the original's tiny "#…" number is illegible, so it's **omitted** rather than guessed.
+3. **3c:** the source graphic is verified as a closed cloud with no trail, and the text is "Just… breathe." with no parentheses. It is lettered to match. Thought vs speech is UNRESOLVED.
+4. **14a:** the original's tiny "#…" number is illegible, so it stays **blank** (decided).
 5. **2b:** **Resolved (gate 2):** the invented "BROLY" name tape was removed.
 6. **2c:** **Resolved (gate 4):** the recruit now matches the source's short, swept, non-pink hair. His identity is UNRESOLVED and **not** assigned to Broly.
 7. **9d:** invented vial labels ("VACCINE", "MEDICINE") appeared and were removed with an edit pass (blank labels now).
-8. **14c:** Broly is shirtless at the sink (the original shows a dark top). Minor.
+8. **14c:** **Resolved:** the shirtless look was a generation error. The dark top from the source is restored.
 9. **Captions:** all caption *bodies* are new copy in Broly's voice (PROPOSED). The headers keep the original information.
 
 ## Credits
@@ -120,9 +131,10 @@ Captions are **PROPOSED** (Broly's voice). Everything else is carried over from 
 | Panels: pilot (8) + remaining (44) | 52 | 2,080 |
 | 9d label fix | 1 | 40 |
 | Gate 2 (2b name tape) + gate 4 (2c recruit) | 2 | 80 |
-| **Total** | **56** | **2,240** |
+| 14c dark top restored | 1 | 40 |
+| **Total** | **57** | **2,280** |
 
-- Balance: 8,507 → **6,267**.
+- Balance: 8,507 → **6,227**.
 - Model: Nano Banana Pro i2i at 2K, 40 credits each.
 - Title and end cards, black beats, lettering, and assembly were done locally: 0 credits.
 
@@ -142,4 +154,4 @@ Set `HOSHOKU_SOURCE_CAPTIONS=1` to render without the PROPOSED Broly-voice capti
 - **Gate 5:** approve the Broly-voice captions, or switch to source-only headers.
 - **Gate 6:** after the gates clear, re-upload the updated parts to Canva. Combining them still needs your OK.
 - **Gate 7:** Ch. 2 after the mirror scene is blocked on the story beats (E in the audit). Nothing past page 14 has been generated.
-- Open flags: 3c thought vs speech, the 14a number, and the 14c top.
+- Still open: whether 3c is a thought or speech (canon). Everything else from the source checks is resolved.
