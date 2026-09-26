@@ -170,13 +170,14 @@ Budget fit: 4 new chapters at ~45 panels is ~180 new panels, the practical ceili
 
 > **Done 2026-09-26:** see `drafts/hoshoku-ch1-ch2-continuity-script.md`.
 
-> **Vertical edition (2026-09-26):** technically complete (Ch. 1 + Ch. 2 to the mirror scene) but **not canon-locked**. Gate status:
+> **Vertical edition (2026-09-26):**
 >
-> - Source-verified: "Eyes forward. Squeeze—" and "Can't… slow down…".
-> - Fixed: the BROLY name tape is removed, and the 2-c recruit is restored to the source look with identity unassigned.
-> - Broly-voice captions are PROPOSED, not canon.
-> - Canva parts are not combined.
-> - Nothing is generated past the mirror scene.
+> - **Chapter 1: CANON LOCKED 🔒.** No more generation.
+> - **Chapter 2:** held after the mirror scene.
+> - **Canva:** the folder is updated with the locked parts. Merging them is not approved yet.
+> - **Credits:** 6,227 remaining.
+>
+> Source-verified: "Eyes forward. Squeeze—", "Can't… slow down…", and the 3c closed cloud "Just… breathe." (left unclassified). Fixed: the name tape is removed, the 2-c recruit is restored, and the 14c dark top is restored. The Broly-voice captions are approved as the final layer. 14a stays blank.
 >
 > See `drafts/hoshoku-vol1-vertical/README.md`.
 

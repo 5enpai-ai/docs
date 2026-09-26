@@ -5,7 +5,16 @@ A vertical webtoon recreation of the existing manga (Canva `DAG9IhSY4Xo`, pages 
 - **Source:** the original project is the reference and the guide. The story is unchanged.
 - **Manga only.** No claymation material is used anywhere. The claymation project is separate from this pipeline.
 
-> **Status: technically complete, not canon-locked.** All 52 generated panels are assembled into 55 slices. The edition is not canon-locked until the approval gates below are cleared.
+> ## Status (2026-09-26)
+>
+> | | |
+> |---|---|
+> | **Chapter 1 vertical edition** | **CANON LOCKED 🔒.** No more generation for Ch. 1. The remaining work is packaging and uploading only. |
+> | **Chapter 2** | **HOLD after the mirror scene (14d)**, until the story beats (Section E) are set. |
+> | **Canva** | **Update approved and done. Merging into one design is not yet approved.** The original designs are untouched. |
+> | **Remaining credits** | **6,227** |
+>
+> The Ch. 2 opening panels (13a–14d) are also corrected to match the source, but Ch. 2 as a whole stays on hold.
 
 ## Approval gates (2026-09-26)
 
@@ -15,8 +24,8 @@ A vertical webtoon recreation of the existing manga (Canva `DAG9IhSY4Xo`, pages 
 | 2 | BROLY name tape (2b) | ✅ **Removed** | Edit pass: the name tape is now a blank strip and nothing else changed (40 credits). |
 | 3 | "Can't… slow down…" (3a) | ✅ **Verified against source** | The covering caption was lifted in a discarded Canva draft. The source text layer reads **"Can't… slow down…"** in full, so nothing is invented. The lettering stays as it is. |
 | 4 | Recruit on the barrier (2c) | ✅ **Fixed; identity unassigned** | Edit pass using the original panel as the reference: short, swept, light-brown/copper hair, lighter skin, no locs, no pink (40 credits). The hair colour is OBSERVED under a sepia grade, so the exact shade is UNVERIFIED. He is **not** labelled as Broly. |
-| 5 | Broly-voice captions | ⏳ **PROPOSED; awaiting approval** | Not canon. `preview_half_res_source_captions.jpg` shows the strip with only the source info headers. You can render either version at 0 credits (see below). |
-| 6 | Canva | ⏸ **Not combined** | The originals are untouched. The 11 parts in `FAHWQyQJp9s` were made **before** gates 2 and 4, so they are superseded until the gates pass. Nothing will be re-uploaded or combined without your OK. |
+| 5 | Broly-voice captions | ✅ **Approved as the final caption layer** (D'nuke, 2026-09-26) | The Broly-voice lines are an approved adaptation layer. Each caption header keeps the original day/time/place information. `preview_half_res_source_captions.jpg` remains as a reference for the source-info-only version. |
+| 6 | Canva | ✅ **Folder updated, not combined** | Only parts 02, 03 and 10 changed; the cover and the other seven parts are byte-identical. The locked versions `part 02 / 03 / 10 (LOCKED)` replace the old ones in `FAHWQyQJp9s`. The old ones are in the subfolder **Superseded (pre-lock)** (`FAHWRNtpWN0`), not deleted. Combining the parts into one design **needs your approval**. The original designs are untouched. |
 | 7 | Chapter 2 scope | ⏸ **Stops at the mirror scene (14d)** | No generation past it until the story beats (Section E) are set. |
 
 Before and after for gates 2 and 4: `reference/gates_2_4_before_after.jpg`.
@@ -25,11 +34,11 @@ Before and after for gates 2 and 4: `reference/gates_2_4_before_after.jpg`.
 
 | Item | Status | What was done |
 |---|---|---|
-| 3c bubble | ✅ **Lettered as in the source** | I isolated the bubble graphic (`MAGeHE3VgSo`) in a Canva draft that I then discarded. It is a **closed, scalloped cloud with no tail and no dot trail**, and the source text is **"Just… breathe."** with no parentheses. The vertical edition had added parentheses and a dot trail, and both are now removed. The cloud outline matches the source. Whether the line is a thought or speech is still **UNRESOLVED**: the source gives a cloud shape, but no trail or parentheses to confirm it. |
-| 14a number | ✅ **Left blank** | The number is unreadable in the source, so none was added. |
-| 14c clothing | ✅ **Dark top restored** | Edit pass using the original 14c as the reference. He now wears a plain dark charcoal crew-neck top, and nothing else changed (40 credits). See `reference/14c_before_after.jpg`. |
+| 3c bubble | 🔒 **Locked as in the source** | I isolated the bubble graphic (`MAGeHE3VgSo`) in a Canva draft that I then discarded. It is a **closed, scalloped cloud with no tail and no dot trail**, and the source text is **"Just… breathe."** with no parentheses. The vertical edition had added parentheses and a dot trail, and both are now removed. The cloud outline matches the source. **Decision:** leave it exactly as the source has it. It is deliberately **not** classified as a thought or as speech, because the source doesn't establish either. |
+| 14a number | 🔒 **Blank (locked)** | The number is unreadable in the source, so none was added. |
+| 14c clothing | 🔒 **Dark charcoal crew-neck (locked)** | Edit pass using the original 14c as the reference. He now wears a plain dark charcoal crew-neck top, and nothing else changed (40 credits). See `reference/14c_before_after.jpg`. |
 
-**Credit hold:** no more credits will be spent on Chapter 1 until the remaining lettering decisions are made.
+**Credit hold:** no more generation for Chapter 1. It is canon locked.
 
 
 ## Decisions applied (D'nuke, 2026-09-26)
@@ -39,7 +48,7 @@ Before and after for gates 2 and 4: `reference/gates_2_4_before_after.jpg`.
 | Format | 800 px wide vertical scroll. Every original panel is recomposed as a tall or insert panel. |
 | Broly's hair | **Approved sheet everywhere:** pink-and-blonde ombré locs (sandy roots, pink ends) on every panel. This replaces the original's short-twist and long-loc switches. |
 | HOSHOKU | Position A is locked. HOSHOKU does not appear in any Ch. 1–2 panel; this matches the original, where he appears only in the emblem. |
-| Captions | **PROPOSED adaptation copy, not canon** (gate 5). Captions are rewritten in **Broly's own wry voice** in HOSHOKU-styled boxes. The original caption *information* (day, time, place) is kept as the mono header on each box. |
+| Captions | **Approved final caption layer** (gate 5; an adaptation layer over the original info). Captions are rewritten in **Broly's own wry voice** in HOSHOKU-styled boxes. The original caption *information* (day, time, place) is kept as the mono header on each box. |
 | Dialogue / SFX | Carried over word for word from the original (see flags). No new dialogue or story beats were added. |
 | Tall pages 16–19 of the original | Not used as a source. They changed settings (ENLIST neon, indoor pool, drill instructor). The recreation follows the published spreads. |
 
@@ -50,7 +59,7 @@ Before and after for gates 2 and 4: `reference/gates_2_4_before_after.jpg`.
 | **Webtoon upload slices:** 55 JPGs at 800×1280, in reading order | `webtoon_upload/hoshoku_v1_ch1-2_001.jpg` … `_055.jpg` |
 | Half-res preview of the whole strip | `preview_half_res.jpg` (proposed captions), `preview_half_res_source_captions.jpg` (source info headers only) |
 | Broly consistency sheet (turnaround, heads, 6 expressions) | `reference/broly_consistency_sheet_v1.jpg` |
-| Canva: 11 tall parts (cover + parts 01–10). **Superseded:** made before gates 2 and 4. | Canva folder **HOSHOKU Vol 1 — Vertical Edition** (`FAHWQyQJp9s`), inside `Hoshoku` |
+| Canva: 11 tall parts (cover + parts 01–10). Parts 02, 03 and 10 are the `(LOCKED)` versions. | Canva folder **HOSHOKU Vol 1 — Vertical Edition** (`FAHWQyQJp9s`), inside `Hoshoku` |
 | OpenArt: all panels, references, and the sheet | OpenArt project **HOSHOKU Manga Vol 1** (`SSv9vVVoeJgYuglRoCHK`) |
 | Full-resolution panel URLs, keyed by original panel ID | `pipeline/panel_sources.json` |
 | Lettering and assembly pipeline (re-runnable) | `pipeline/` (see below) |
@@ -80,7 +89,7 @@ All four are OFL-licensed, from `@fontsource`.
 
 ## Vertical script: captions and lettering
 
-Captions are **PROPOSED** (Broly's voice). Everything else is carried over from the original.
+Captions are the **approved** Broly-voice layer. Everything else is carried over from the original.
 
 | Panel | Lettering |
 |---|---|
@@ -115,13 +124,13 @@ Captions are **PROPOSED** (Broly's voice). Everything else is carried over from 
 
 1. **2e:** ~~UNVERIFIED~~ **Resolved (gate 1):** the source text layer reads "Eyes forward. Squeeze—".
 2. **3a:** ~~UNVERIFIED~~ **Resolved (gate 3):** the source text layer reads "Can't… slow down…" in full.
-3. **3c:** the source graphic is verified as a closed cloud with no trail, and the text is "Just… breathe." with no parentheses. It is lettered to match. Thought vs speech is UNRESOLVED.
+3. **3c:** locked as the source has it: a closed cloud with no trail, and "Just… breathe." with no parentheses. By decision, it is not classified as a thought or as speech.
 4. **14a:** the original's tiny "#…" number is illegible, so it stays **blank** (decided).
 5. **2b:** **Resolved (gate 2):** the invented "BROLY" name tape was removed.
 6. **2c:** **Resolved (gate 4):** the recruit now matches the source's short, swept, non-pink hair. His identity is UNRESOLVED and **not** assigned to Broly.
 7. **9d:** invented vial labels ("VACCINE", "MEDICINE") appeared and were removed with an edit pass (blank labels now).
 8. **14c:** **Resolved:** the shirtless look was a generation error. The dark top from the source is restored.
-9. **Captions:** all caption *bodies* are new copy in Broly's voice (PROPOSED). The headers keep the original information.
+9. **Captions:** all caption *bodies* are new copy in Broly's voice, **approved** as the final layer. The headers keep the original information.
 
 ## Credits
 
@@ -151,7 +160,6 @@ Set `HOSHOKU_SOURCE_CAPTIONS=1` to render without the PROPOSED Broly-voice capti
 
 ## Next
 
-- **Gate 5:** approve the Broly-voice captions, or switch to source-only headers.
-- **Gate 6:** after the gates clear, re-upload the updated parts to Canva. Combining them still needs your OK.
-- **Gate 7:** Ch. 2 after the mirror scene is blocked on the story beats (E in the audit). Nothing past page 14 has been generated.
-- Still open: whether 3c is a thought or speech (canon). Everything else from the source checks is resolved.
+- **Canva merge:** combining the parts into one Canva design still needs your approval.
+- **Chapter 2:** held after the mirror scene until the story beats (E in the audit) are set. Nothing past page 14 has been generated.
+- **Chapter 1:** locked. Packaging and uploading only; no creative iteration.
