@@ -83,6 +83,23 @@ Design question to settle before the mouth sheet: the stitched seam runs through
 
 ---
 
+## Drive reference audit — 2026-09-27
+
+Full audit: `HOSHOKU_VTUBER_DRIVE_REFERENCE_AUDIT.md`. Per the user's instruction, Google Drive's **Everything Hoshoku** folder (`1bp0DKbIhD1p8APHaAsTeKrT8oF3FhPuw`, owned by the user) is now the visual source of truth, ahead of the OpenArt library. A second folder of the same name, owned by a collaborator (`shitokun05@gmail.com`), is visible but its contents could not be listed — likely a permissions gap, not an empty folder. Ask the collaborator to share it directly if it holds material this one doesn't.
+
+**Hard limitation:** this session cannot view image pixels — the OpenArt CDN is network-blocked, and Google Drive's content tool only does text/OCR extraction, which returns nothing for photos or flat design PNGs. The Drive audit is built from filenames, folder placement, and upload lineage, not visual inspection. Anything the audit marks `UNKNOWN` needs a human to actually open the file.
+
+**Key findings:**
+- `hoshoku_split_stitched_v2.png`, `hoshoku_bunny_red_v2.png`, and `hoshoku_fox_blue_v2.png` are the named canon identity anchors. The split/stitched file matches an existing OpenArt upload by filename; the two half-color files do **not** match anything already in OpenArt — they may be unused, sharper references.
+- `IMG_5067`–`IMG_5069_Original.JPG`, `IMG_5350`/`5351.JPG`, `IMG_6052.PNG`, and 4 UUID-named `.jpg` files are very likely photos of the real physical puppet — the strongest possible form/seam/silhouette reference, unconfirmed visually. **Highest-priority files for you to open.**
+- 59 unique `*_n.webp` files are Facebook/Instagram moodboard pulls (inspiration, not canon) — not itemized individually.
+- No source anywhere (Drive or OpenArt) answers how the center seam behaves at the mouth. This is a genuine, unresolved gap, not something existing material already covers.
+- No humanoid reference, proportion reference, back view, or clothing/accessory reference was found in Drive.
+
+**Decision: OpenArt generation is NOT authorized yet.** The Drive library plausibly already covers the joined-character identity, but that can't be confirmed without a human (or a session with image access) opening the anchor files and the probable real-puppet photos. See the audit's "OpenArt generation decision" section for the candidate first-generation objective (a front/side/back turnaround) to use only if, after that visual check, a gap still remains.
+
+---
+
 ## Operations log
 
 Template (copy for each operation):
@@ -99,6 +116,17 @@ Template (copy for each operation):
 - **Credit impact:** Known / estimated / unknown
 - **Next step:** What consumes this asset next?
 ```
+
+### Google Drive reference library audit — 2026-09-27
+
+- **Purpose:** Establish Drive as the visual source of truth for HOSHOKU identity, per user instruction, before authorizing any OpenArt generation
+- **Tool:** Google Drive MCP (read-only: search, folder listing, metadata, content-extraction attempts)
+- **Input:** The "Everything Hoshoku" Drive folder (96 files) and the user's known anchor filenames
+- **Output:** `HOSHOKU_VTUBER_DRIVE_REFERENCE_AUDIT.md` — full reference matrix, category breakdown, and gap analysis
+- **Status:** NEEDS REVISION (the audit itself is complete, but it is built from filenames/lineage only — this session cannot view image content; visual confirmation from a human is required before its findings can be treated as CONFIRMED)
+- **Reuse:** The audit document is a durable production reference; the underlying Drive files' canonical status is still pending confirmation
+- **Credit impact:** None
+- **Next step:** A human opens the anchor files (`hoshoku_split_stitched_v2.png`, `hoshoku_bunny_red_v2.png`, `hoshoku_fox_blue_v2.png`) and the likely real-puppet photos (`IMG_5067`–`5069_Original.JPG`, `IMG_5350`/`5351.JPG`) to confirm canon status. Only after that should an OpenArt generation be considered, and only for whatever gap still remains (most likely a front/side/back turnaround).
 
 ### Avatar subject decision + full default-project audit — 2026-09-27
 
