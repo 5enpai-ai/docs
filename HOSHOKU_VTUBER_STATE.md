@@ -8,15 +8,25 @@ Record every meaningful OpenArt or Meshy operation in the **Operations log** bel
 
 ## Resource status
 
-Snapshot taken 2026-09-27 through the OpenArt MCP (read-only, no credits spent).
+Last updated 2026-09-27 (Drive audit + technical research pass). No credits spent at any point so far.
 
 | Resource | Status |
 | --- | --- |
-| OpenArt account | Plus plan, 6,227 credits |
+| OpenArt | Available, 6,227 credits (Plus plan) |
+| OpenArt generation (image) | Available |
+| OpenArt generation (video) | Available |
+| OpenArt image CDN | **Not visually accessible from the current Claude session** — network policy blocks it; confirmed by a failed download attempt |
+| Drive image pixels | **Not visually accessible through the current extraction method** — `read_file_content` only performs text/OCR extraction, which returns nothing for photos or flat design PNGs |
+| Meshy | **Access still needs verification.** No Meshy MCP tool exists in this session's toolset (checked directly, see `HOSHOKU_VTUBER_TECHNICAL_REQUIREMENTS.md`) — this is a tooling gap, not a statement about the account itself |
+| Existing HOSHOKU joined references | **Confirmed by metadata** (filenames, folder placement, upload lineage) — **not** confirmed visually. See `HOSHOKU_VTUBER_DRIVE_REFERENCE_AUDIT.md`. |
+| Humanoid HOSHOKU | Not yet designed or approved |
+| 2D Live2D avatar | Not built |
+| 3D VRM avatar | Not built |
 | OpenArt project: Personal Project (default) | Stop-motion / claymation HOSHOKU work (puppets, sets, video tests) |
 | OpenArt project: HOSHOKU Manga Vol 1 | Vertical webtoon recreation of Vol 1 "Flashback" (manga only). Not an avatar source. |
-| Meshy | Not yet checked — confirm the account or workspace is still accessible |
-| Local HOSHOKU assets | Not yet inventoried in this repository |
+| Local HOSHOKU assets in this repository | Not inventoried — no HOSHOKU art files exist in this repo; canon material lives in Google Drive |
+
+**No generation approved yet. No credits spent.**
 
 ---
 
@@ -85,7 +95,7 @@ Design question to settle before the mouth sheet: the stitched seam runs through
 
 ## Drive reference audit — 2026-09-27
 
-Full audit: `HOSHOKU_VTUBER_DRIVE_REFERENCE_AUDIT.md`. Per the user's instruction, Google Drive's **Everything Hoshoku** folder (`1bp0DKbIhD1p8APHaAsTeKrT8oF3FhPuw`, owned by the user) is now the visual source of truth, ahead of the OpenArt library. A second folder of the same name, owned by a collaborator (`shitokun05@gmail.com`), is visible but its contents could not be listed — likely a permissions gap, not an empty folder. Ask the collaborator to share it directly if it holds material this one doesn't.
+Full audit: `HOSHOKU_VTUBER_DRIVE_REFERENCE_AUDIT.md`. Per the user's instruction, Google Drive's **Everything Hoshoku** folder (`1bp0DKbIhD1p8APHaAsTeKrT8oF3FhPuw`, owned by the user) is now the visual source of truth, ahead of the OpenArt library. A second folder of the same name, owned by a collaborator (`shitokun05@gmail.com`), is visible but its contents could not be listed — recorded as `EXTERNAL_REFERENCE_FOLDER_UNVERIFIED` (see the audit for the exact access gap). Not treated as irrelevant, and no action requested regarding it.
 
 **Hard limitation:** this session cannot view image pixels — the OpenArt CDN is network-blocked, and Google Drive's content tool only does text/OCR extraction, which returns nothing for photos or flat design PNGs. The Drive audit is built from filenames, folder placement, and upload lineage, not visual inspection. Anything the audit marks `UNKNOWN` needs a human to actually open the file.
 
@@ -96,7 +106,20 @@ Full audit: `HOSHOKU_VTUBER_DRIVE_REFERENCE_AUDIT.md`. Per the user's instructio
 - No source anywhere (Drive or OpenArt) answers how the center seam behaves at the mouth. This is a genuine, unresolved gap, not something existing material already covers.
 - No humanoid reference, proportion reference, back view, or clothing/accessory reference was found in Drive.
 
-**Decision: OpenArt generation is NOT authorized yet.** The Drive library plausibly already covers the joined-character identity, but that can't be confirmed without a human (or a session with image access) opening the anchor files and the probable real-puppet photos. See the audit's "OpenArt generation decision" section for the candidate first-generation objective (a front/side/back turnaround) to use only if, after that visual check, a gap still remains.
+**Decision: OpenArt generation is NOT authorized yet.** The Drive library plausibly already covers the joined-character identity, but that can't be confirmed without a human (or a session with image access) opening the anchor files and the probable real-puppet photos.
+
+---
+
+## Visual verification queue + technical requirements — 2026-09-27
+
+Two follow-on documents, produced without any image access and without spending credits:
+
+- **`HOSHOKU_VTUBER_VISUAL_VERIFICATION.md`** — a prioritized list of exactly which files need a human's eyes (5 Priority-1, 5 Priority-2, plus a few lower-priority name-flagged files), each with the specific question it would answer and the two possible outcomes. Ends with a compact 10-question questionnaire covering everything needed back from you — not a re-ask of the earlier 12 questions.
+- **`HOSHOKU_VTUBER_TECHNICAL_REQUIREMENTS.md`** — general (non-HOSHOKU-specific) research into what the 2D (Live2D/VTube Studio) and 3D (Meshy/VRM/VSeeFace/Warudo) pipelines actually require: source-art format, layer separation, minimum facial controls/blendshapes, file formats (GLB/VRM/FBX), what Meshy can automate vs. what needs manual rigging work, and what software is actually available in this session (OpenArt: yes; Meshy: no MCP tool exists in this session; Live2D/Blender/Unity/VTube Studio/VSeeFace/Warudo/OBS: all outside this session, desktop-only). Confirms 2D and 3D are separate production tracks needing separate source assets, even if both start from the same confirmed identity.
+
+The old "candidate first-generation objective" (a front/side/back turnaround, presented as the default next generation) has been replaced in the Drive audit with a decision tree: the right generation, if any, depends on what the visual verification queue's answers show — identity gap, humanoid-design gap, turnaround gap, or expression/mouth gap are all different next steps, and none is being assumed. The Smart Shot sheets (`qyJpF4p5GcEmkHTf47dg`, `gLcx9oM4nEzttNUjgQ9t`) remain recorded as **candidate** joined-HOSHOKU references requiring visual verification — not confirmed turnarounds, and not discarded.
+
+**Stop condition reached.** No generation has been made or scheduled. No credits spent. Waiting on the user's answers to the visual verification questionnaire before any further OpenArt action.
 
 ---
 
@@ -126,7 +149,18 @@ Template (copy for each operation):
 - **Status:** NEEDS REVISION (the audit itself is complete, but it is built from filenames/lineage only — this session cannot view image content; visual confirmation from a human is required before its findings can be treated as CONFIRMED)
 - **Reuse:** The audit document is a durable production reference; the underlying Drive files' canonical status is still pending confirmation
 - **Credit impact:** None
-- **Next step:** A human opens the anchor files (`hoshoku_split_stitched_v2.png`, `hoshoku_bunny_red_v2.png`, `hoshoku_fox_blue_v2.png`) and the likely real-puppet photos (`IMG_5067`–`5069_Original.JPG`, `IMG_5350`/`5351.JPG`) to confirm canon status. Only after that should an OpenArt generation be considered, and only for whatever gap still remains (most likely a front/side/back turnaround).
+- **Next step:** A human opens the anchor files (`hoshoku_split_stitched_v2.png`, `hoshoku_bunny_red_v2.png`, `hoshoku_fox_blue_v2.png`) and the likely real-puppet photos (`IMG_5067`–`5069_Original.JPG`, `IMG_5350`/`5351.JPG`) to confirm canon status. See the entry below for how that check was organized.
+
+### Visual verification queue + technical requirements pass — 2026-09-27
+
+- **Purpose:** Split the project into what Claude can prepare without pixel access, what needs the user's visual confirmation, and what's solvable later by tooling — instead of stalling on "user must inspect six files"
+- **Tool:** None (documentation/research only; no Drive, OpenArt, or Meshy write calls)
+- **Input:** The Drive audit's `UNKNOWN` rows, plus general knowledge of the Live2D and VRM/Meshy production pipelines
+- **Output:** `HOSHOKU_VTUBER_VISUAL_VERIFICATION.md` (prioritized queue + 10-question questionnaire) and `HOSHOKU_VTUBER_TECHNICAL_REQUIREMENTS.md` (2D/3D pipeline requirements, tool availability). The Drive audit's generation-decision section was rewritten from a single candidate objective into a decision tree.
+- **Status:** PASS
+- **Reuse:** Both documents are durable production references, independent of any single generation
+- **Credit impact:** None
+- **Next step:** User answers the visual verification questionnaire. No OpenArt generation until those answers are incorporated into the reference pack.
 
 ### Avatar subject decision + full default-project audit — 2026-09-27
 
