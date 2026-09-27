@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dante video research record",
+  "description": "One record per watched video. Fill a field only from what's seen or heard in the video.",
+  "type": "object",
+  "required": ["id", "url", "verification", "provenance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^V[0-9]{2,}$"},
+    "url": {"type": "string"},
+    "verification": {"enum": ["watched", "partial", "UNVERIFIABLE"]},
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "uploader": {"type": "string"},
+        "is_luca_original": {"type": ["boolean", "null"]},
+        "upload_date": {"type": ["string", "null"]},
+        "platform": {"enum": ["youtube", "tiktok", "instagram", "facebook", "other"]}
+      }
+    },
+    "title_or_caption": {"type": ["string", "null"]},
+    "duration_s": {"type": ["number", "null"]},
+    "characters": {"type": "array", "items": {"type": "string"}},
+    "setting": {"type": ["string", "null"]},
+    "opening_hook": {"type": ["string", "null"], "description": "What is on screen and heard in the first ~2 s"},
+    "dialogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["t_start", "speaker", "line"],
+        "properties": {
+          "t_start": {"type": "number"},
+          "t_end": {"type": "number"},
+          "speaker": {"type": "string"},
+          "line": {"type": "string", "description": "Verbatim"},
+          "delivery": {"type": "string"}
+        }
+      }
+    },
+    "joke_premise": {"type": ["string", "null"]},
+    "escalation": {"type": ["string", "null"]},
+    "punchline": {"type": ["string", "null"]},
+    "final_line": {"type": ["string", "null"]},
+    "recurring_phrases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {"type": "string"},
+          "timestamps": {"type": "array", "items": {"type": "number"}},
+          "channel": {"enum": ["spoken", "garment", "caption", "mixed"]},
+          "beat_function": {"type": "string"}
+        }
+      }
+    },
+    "product": {
+      "type": "object",
+      "properties": {
+        "item": {"type": ["string", "null"]},
+        "visible_text": {"type": ["string", "null"]},
+        "first_on_screen_s": {"type": ["number", "null"]},
+        "text_readable_s": {"type": "array", "items": {"type": "number"}},
+        "entry_into_joke": {"type": ["string", "null"]}
+      }
+    },
+    "camera": {"type": ["string", "null"]},
+    "framing": {"type": ["string", "null"]},
+    "editing": {
+      "type": "object",
+      "properties": {
+        "cut_times_s": {"type": "array", "items": {"type": "number"}},
+        "avg_shot_s": {"type": ["number", "null"]},
+        "transitions": {"type": ["string", "null"]}
+      }
+    },
+    "render_characteristics": {"type": ["string", "null"]},
+    "voice": {"type": ["string", "null"]},
+    "sfx": {"type": "array", "items": {"type": "string"}},
+    "music": {"type": ["string", "null"]},
+    "ending_structure": {"type": ["string", "null"]},
+    "repeated_from_other_videos": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": ["string", "null"]}
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "_source": "Shopify (source of truth) + Printify print files, read 2026-09-27. Mockup images not viewed. Placement comes from the print-file coordinates.",
+  "collection": {
+    "id": "u002-seek",
+    "name": "Ü-002 // SEEK",
+    "meaning": "The awakening that comes after enlightenment.",
+    "priority": "front-page collection, promote most prominently"
+  },
+  "products": [
+    {
+      "id": "u002-seek-truth-oversized",
+      "shopify_title": "Ü-002 \"Seek Truth\" Oversized Shirt",
+      "shopify_gid": "gid://shopify/Product/10244301652266",
+      "printify_id": "6a755ce6dd3b3e12150eb1db",
+      "garment": "T-shirt, heavy cotton, DTG, unisex oversized",
+      "colorways": ["White", "Black", "Natural"],
+      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"],
+      "presentation": "UNSPECIFIED",
+      "gender_correspondence": "UNSPECIFIED",
+      "pair_with": "u002-seek-reality-oversized",
+      "placements": {
+        "front": [
+          {"element": "text", "text": "SEEK", "style": "red blackletter caps", "position": "upper center"},
+          {"element": "graphic", "desc": "snarling canine head, one eye bleeding red", "position": "center, large"},
+          {"element": "text", "text": "TRUTH", "style": "red blackletter caps", "position": "lower right"},
+          {"element": "graphic", "desc": "small head, half fox muzzle and half rabbit ear, red spiral eye, red X", "position": "top-right corner"}
+        ],
+        "back": [
+          {"element": "text", "text": "üNDRRARE", "style": "red blackletter arc", "position": "top"},
+          {"element": "graphic", "desc": "circular line art: canine lunging open-jawed at rabbit with X eyes", "position": "center, large"},
+          {"element": "text", "text": "SEEK / REALITY", "style": "red blackletter, opposing arcs; REALITY upside down at rest", "position": "bottom"}
+        ],
+        "left_sleeve": [{"element": "graphic", "desc": "rabbit head, purple X eye with teardrop, black X eye"}],
+        "right_sleeve": [{"element": "graphic", "desc": "angular white canine head, black X eye, red spiral eye, fang"}],
+        "neck": [
+          {"element": "text", "text": "ün / dr", "style": "ÜNDR 2x2 box tag"},
+          {"element": "text", "text": "UNVERIFIED", "note": "Printify text layer; content not exposed by the API"}
+        ]
+      },
+      "art_color_rule": "black line art on White/Natural, white line art on Black; red elements on all",
+      "store_copy_phrases": ["The other half.", "not stopping once you have", "They just land harder side by side."],
+      "properties": ["pair", "front_back_split", "rotational_back", "casing", "seek_constant"]
+    },
+    {
+      "id": "u002-seek-reality-oversized",
+      "shopify_title": "Ü-002 \"Seek Reality\" Oversized Shirt",
+      "shopify_gid": "gid://shopify/Product/10244301455658",
+      "printify_id": "6a755ce8dd3b3e12150eb1dc",
+      "garment": "T-shirt, heavy cotton, DTG, unisex oversized",
+      "colorways": ["White", "Black", "Natural"],
+      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"],
+      "presentation": "UNSPECIFIED",
+      "gender_correspondence": "UNSPECIFIED",
+      "pair_with": "u002-seek-truth-oversized",
+      "placements": {
+        "front": [
+          {"element": "text", "text": "SEEK", "style": "red blackletter caps", "position": "upper left"},
+          {"element": "graphic", "desc": "front-facing rabbit head, red claw-scratch across one eye, dripping", "position": "center, large"},
+          {"element": "text", "text": "Reality", "style": "red blackletter title case", "position": "lower right"},
+          {"element": "graphic", "desc": "small head, half fox muzzle and half rabbit ear, red spiral eye, red X", "position": "top-right corner"}
+        ],
+        "back": "same as u002-seek-truth-oversized",
+        "left_sleeve": "same as u002-seek-truth-oversized",
+        "right_sleeve": "same as u002-seek-truth-oversized",
+        "neck": "same as u002-seek-truth-oversized"
+      },
+      "art_color_rule": "black line art on White/Natural, white line art on Black; red elements on all",
+      "store_copy_phrases": ["One half of a pair.", "the morning after it", "look at what's in front of you", "it's the one that sticks"],
+      "properties": ["pair", "rotational_back", "casing", "seek_constant"]
+    }
+  ],
+  "property_definitions": {
+    "pair": "The two shirts are sold as halves of a pair (canine front vs rabbit front).",
+    "front_back_split": "Seek Truth reads SEEK TRUTH on the front and SEEK / REALITY on the back.",
+    "rotational_back": "The back SEEK / REALITY arcs read differently when the image is rotated 180 degrees.",
+    "casing": "TRUTH is set in caps; Reality is set in title case.",
+    "seek_constant": "SEEK appears on every front; only the second word changes."
+  }
+}

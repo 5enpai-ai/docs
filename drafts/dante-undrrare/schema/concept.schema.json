@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ÜNDRRARE character comedy concept (v0)",
+  "description": "Generator input and output. Fields whose value is PENDING_DANTE block generation until the Dante analysis fills them.",
+  "$defs": {
+    "pending": {"const": "PENDING_DANTE"},
+    "input": {
+      "type": "object",
+      "required": ["character_id", "product_id", "colorway", "trait_id", "product_property_id", "premise_type", "callback_mode"],
+      "properties": {
+        "character_id": {"enum": ["killua", "zero_two"]},
+        "product_id": {"enum": ["u002-seek-truth-oversized", "u002-seek-reality-oversized"]},
+        "colorway": {"enum": ["White", "Black", "Natural"]},
+        "trait_id": {"type": "string"},
+        "product_property_id": {"enum": ["pair", "front_back_split", "rotational_back", "casing", "seek_constant"]},
+        "premise_type": {"oneOf": [{"$ref": "#/$defs/pending"}, {"type": "string"}]},
+        "callback_mode": {"enum": ["repeat", "misunderstand", "challenge", "reinforce"]},
+        "batch_seed": {"type": "string"}
+      }
+    },
+    "beat": {
+      "type": "object",
+      "required": ["function", "start_s", "end_s", "product_visibility"],
+      "properties": {
+        "function": {"type": "string"},
+        "start_s": {"type": "number"},
+        "end_s": {"type": "number"},
+        "shot": {"type": "string"},
+        "action": {"type": "string"},
+        "dialogue": {"type": "array", "items": {"type": "object", "properties": {"speaker": {"type": "string"}, "line": {"type": "string"}}}},
+        "product_visibility": {"enum": ["none", "partial", "text_readable"]},
+        "on_screen_text": {"type": ["string", "null"]}
+      }
+    }
+  },
+  "type": "object",
+  "required": ["concept_id", "inputs", "beats", "callback", "validation"],
+  "properties": {
+    "concept_id": {"type": "string"},
+    "inputs": {"$ref": "#/$defs/input"},
+    "runtime_target_s": {"oneOf": [{"$ref": "#/$defs/pending"}, {"type": "number"}]},
+    "beats": {"type": "array", "items": {"$ref": "#/$defs/beat"}, "minItems": 1},
+    "callback": {
+      "type": "object",
+      "required": ["line", "occurrences"],
+      "properties": {
+        "line": {"type": "string", "description": "Only words verified on the garment (06-undrrare-system.md §6.3)"},
+        "occurrences": {"type": "array", "items": {"type": "object", "properties": {"beat_index": {"type": "integer"}, "channel": {"enum": ["spoken", "garment", "caption"]}}}}
+      }
+    },
+    "ending": {"oneOf": [{"$ref": "#/$defs/pending"}, {"type": "string"}]},
+    "render_notes": {
+      "type": "object",
+      "properties": {
+        "garment_reference_images": {"type": "array", "items": {"type": "string"}},
+        "style": {"oneOf": [{"$ref": "#/$defs/pending"}, {"type": "string"}]},
+        "voice": {"oneOf": [{"$ref": "#/$defs/pending"}, {"type": "string"}]}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["callback_uses_verified_words", "product_text_readable_in_a_shot", "character_canon_only", "no_hunting_or_predator_language", "no_text_over_product_or_model", "no_sexualized_framing"],
+      "additionalProperties": {"const": true}
+    }
+  }
+}

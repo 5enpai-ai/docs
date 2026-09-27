@@ -1,0 +1,25 @@
+# Seed URLs for Phase 1. Every entry is UNVERIFIABLE until watched.
+# Creator feeds (crawl fully; Dante videos may not say "Dante" in the title)
+https://www.youtube.com/@Santeluca/shorts
+https://www.tiktok.com/@santeluca
+https://www.instagram.com/lucamaxiim/reels/
+# Candidates found through search
+https://www.youtube.com/shorts/Mc8L16lgYck
+https://www.youtube.com/shorts/Nnmaw-zPwfk
+https://www.tiktok.com/@santeluca/video/7537015957332577568
+https://www.tiktok.com/@santeluca/video/7536551727663713568
+https://www.tiktok.com/@santeluca/video/7405952105984396577
+https://www.facebook.com/childrenofkhan/videos/its-hard-being-luca-maxim/825186950122655/
+# Other @santeluca and Luca Maxim uploads surfaced by search (titles don't mention Dante)
+https://www.tiktok.com/@santeluca/video/7603782743524265248
+https://www.tiktok.com/@santeluca/video/7346220792553688352
+https://www.tiktok.com/@santeluca/video/7469425662214868246
+https://www.tiktok.com/@santeluca/video/7444550478706396438
+https://www.tiktok.com/@santeluca/video/7405637287813467425
+https://www.youtube.com/shorts/iTQwkdVHOHs
+https://www.youtube.com/shorts/cR7hAYf2AXM
+https://www.youtube.com/shorts/aDfXqlKa-1w
+https://www.youtube.com/shorts/8_Zr-Bk5Ebw
+https://www.youtube.com/shorts/oYty_hT5Wc4
+https://www.youtube.com/shorts/mc0h3cNRPbM
+https://www.youtube.com/shorts/ySdX_Uemmh0
