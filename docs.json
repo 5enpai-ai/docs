@@ -16,6 +16,12 @@
           "index",
           "quickstart"
         ]
+      },
+      {
+        "group": "HOSHOKU VTuber",
+        "pages": [
+          "hoshoku/vtuber-resource-policy"
+        ]
       }
     ],
     "global": {

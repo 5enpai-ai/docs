@@ -1,0 +1,179 @@
+---
+title: "Generation resource policy"
+description: "When and how to use OpenArt, Meshy, and existing assets to build the HOSHOKU VTuber"
+---
+
+This policy defines how the HOSHOKU VTuber project spends generation resources. Treat every tool as complementary. Don't force one tool to do everything.
+
+## Available resources
+
+The project has access to:
+
+- OpenArt image generation
+- OpenArt video generation
+- OpenArt MCP
+- Meshy, if the existing account or workspace remains accessible
+- Existing HOSHOKU assets and references
+- Technical tooling through Claude Code, Codex, Astra, and Sol
+
+## Core principle
+
+<Note>
+  "Limited credits" doesn't mean "never generate." Optimize for **maximum usable production value per credit**, not for zero generations.
+</Note>
+
+Use OpenArt when generation is the most efficient way to create a genuinely missing asset. Avoid exploratory credit waste.
+
+- One excellent generation that becomes the canonical 2D source beats ten mediocre ones.
+- One useful 3D reference that makes Meshy produce a usable model beats repeated 3D experiments.
+- A short OpenArt video that answers a specific animation question is justified if it prevents larger downstream waste.
+
+## Before every generation
+
+<Steps>
+  <Step title="Identify the asset">
+    Name the exact missing asset.
+  </Step>
+  <Step title="Search existing assets">
+    Search existing HOSHOKU assets and OpenArt history first. See [Use the OpenArt MCP](#use-the-openart-mcp).
+  </Step>
+  <Step title="Consider non-generative options">
+    Check whether you can create the asset through editing, compositing, layer separation, rigging, Blender, Meshy, or another non-generation method.
+  </Step>
+  <Step title="Generate the minimum">
+    If generation is genuinely required, use the smallest number of generations necessary.
+  </Step>
+  <Step title="Preserve the output">
+    Keep successful outputs as canonical production assets.
+  </Step>
+  <Step title="Log it">
+    Record the generation and its purpose in `HOSHOKU_VTUBER_STATE.md`. See [State log](#state-log).
+  </Step>
+</Steps>
+
+## Decision rule
+
+Claude may authorize an OpenArt generation only when **all** of the following are true:
+
+- The required asset is clearly defined.
+- Existing assets have been checked.
+- Non-generative alternatives have been considered.
+- The generation has a specific downstream purpose.
+- The expected result is worth the credit expenditure.
+
+<Warning>
+  If any condition isn't met, **don't generate yet.**
+</Warning>
+
+## OpenArt image generation
+
+Use OpenArt images for:
+
+- Humanoid HOSHOKU concept development
+- Character sheets
+- Front, side, and back references
+- Facial-expression and mouth-expression references
+- Clean 2D VTuber source artwork
+- Missing costume or accessory details
+- Controlled visual variations
+- Reference images for Meshy
+- Correcting a specific missing visual component
+- Other image assets the VTuber pipeline requires
+
+The goal isn't hundreds of variations. The goal is the minimum number of high-value source assets needed to build the actual avatar.
+
+## OpenArt video generation
+
+Use OpenArt video when it answers a specific question:
+
+- Testing HOSHOKU movement
+- Testing facial and mouth behavior visually
+- Creating motion references
+- Testing expressions and character performance
+- Creating temporary animation studies
+- Determining how a specific HOSHOKU manifestation should move
+- Generating reference footage for later implementation
+
+<Warning>
+  An OpenArt video is **not** the final VTuber. The final avatar must be controllable in real time through your tracking setup. Video supports the pipeline. It doesn't replace Live2D, VTube Studio, VRM, VSeeFace, Warudo, or OBS.
+</Warning>
+
+## Use the OpenArt MCP
+
+Use the OpenArt MCP to inspect existing generations, history, and uploads before you generate anything new.
+
+- If an existing HOSHOKU image satisfies the requirement, reuse it.
+- If an existing generation can serve as a reference for a new controlled generation, use it as the reference.
+- If OpenArt holds a stronger asset than anything stored locally, document it in the state log and determine whether you can export and reuse it.
+
+## Meshy
+
+Evaluate Meshy as the 3D production layer. Possible uses:
+
+- Converting approved HOSHOKU visual references into 3D
+- Creating or refining the humanoid model
+- Topology and remesh operations
+- Humanoid rigging
+- Animation testing
+- GLB and FBX export
+- Preparing a model for VRM and facial work
+
+Don't assume Meshy solves facial animation. Validate each of these on every Meshy output:
+
+- Skeleton
+- Weights
+- Eyes
+- Mouth
+- Facial controls
+- Blendshapes
+- Export format
+
+## Pipelines
+
+The tools chain together. Enter a pipeline at the first step that's actually missing.
+
+<Tabs>
+  <Tab title="2D">
+    1. Existing HOSHOKU reference
+    2. OpenArt, only if a missing asset or correction is required
+    3. Final 2D character artwork
+    4. Layer separation
+    5. Live2D
+    6. VTube Studio
+    7. OBS
+  </Tab>
+  <Tab title="3D">
+    1. Existing HOSHOKU reference
+    2. OpenArt, only if a 3D reference is needed
+    3. Meshy
+    4. Humanoid model
+    5. Rig
+    6. Facial system
+    7. VRM
+    8. VSeeFace or Warudo
+    9. OBS
+  </Tab>
+  <Tab title="Motion reference">
+    1. HOSHOKU design
+    2. OpenArt video
+    3. Study the movement or expression
+    4. Reproduce the useful behavior in the real-time avatar
+  </Tab>
+</Tabs>
+
+## State log
+
+Record every meaningful OpenArt or Meshy operation in `HOSHOKU_VTUBER_STATE.md` using this template:
+
+```markdown
+### <Asset name>
+
+- **Purpose:** Why it exists
+- **Tool:** OpenArt / Meshy / other
+- **Input:** Reference assets
+- **Output:** Generated or exported asset
+- **Status:** PASS / FAIL / NEEDS REVISION
+- **Reuse:** Can this become a canonical production asset?
+- **Credit impact:** Known / estimated / unknown
+- **Next step:** What consumes this asset next?
+```
