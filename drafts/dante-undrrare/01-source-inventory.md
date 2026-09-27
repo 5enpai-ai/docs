@@ -1,8 +1,13 @@
 # 1. Source inventory
 
-**Verified Dante videos: 1** (V01, inspected by the local Codex session).
+**Verified Dante videos: 9** (V01–V09). The local Codex research session verified them: it downloaded each reel, watched it, transcribed it and sampled frames. This cloud session didn't view the media directly.
 
-This cloud session still can't reach any video host. Footage is inspected by the local research session through the user's logged-in Instagram browser. Media and analysis live on the user's machine under `/Volumes/lacie/watch-work/luca-dante/<reel>/`, and structured records get relayed here into [`data/videos/`](data/videos/). Media is never stored in this repo.
+This cloud session still can't reach any video host. Footage is inspected by the local session through the user's logged-in Instagram browser. Media and analysis live on the user's machine under `/Volumes/lacie/watch-work/luca-dante/`:
+
+- one folder per reel, each with `reel.mp4`, `transcript/audio.mp3` and `frames/contact.jpg`
+- a compiled packet at `research/VERIFIED_SAMPLE_V01-V09.md`
+
+Structured records are relayed here into [`data/videos/`](data/videos/). Media is never stored in this repo.
 
 A candidate is only upgraded from **UNVERIFIABLE** once its footage and audio have actually been inspected. Nothing about a video's content is inferred from titles, captions, thumbnails or commentary.
 
@@ -18,9 +23,19 @@ A candidate is only upgraded from **UNVERIFIABLE** once its footage and audio ha
 
 ## 1.2 Verified videos
 
-| ID | URL | Caption | Duration | Inspected by | Media | Record |
-| --- | --- | --- | --- | --- | --- | --- |
-| V01 | https://www.instagram.com/lucamaxiim/reel/DdzNE-nlZy7/ | "Gym guys" | 22.83 s | Local Codex session (relayed) | `/Volumes/lacie/watch-work/luca-dante/gym-guys/` | [`data/videos/V01-gym-guys.json`](data/videos/V01-gym-guys.json) |
+All nine are @lucamaxiim originals on Instagram, verified by the local Codex research session. Music and SFX are UNVERIFIED for every reel.
+
+| ID | URL | Published caption | Duration | Media folder | Record |
+| --- | --- | --- | --- | --- | --- |
+| V01 | https://www.instagram.com/reel/DdzNE-nlZy7/ | Gym guys | 22.83 s | `gym-guys/` | [`V01-gym-guys.json`](data/videos/V01-gym-guys.json) |
+| V02 | https://www.instagram.com/reel/DdzGN_PjRVJ/ | Star Wars guys | 24.23 s | not relayed | [`V02-star-wars-guys.json`](data/videos/V02-star-wars-guys.json) |
+| V03 | https://www.instagram.com/reel/Ddy_VwgCrA4/ | How'd you know I'm British bruv? | 24.50 s | not relayed | [`V03-british-bruv.json`](data/videos/V03-british-bruv.json) |
+| V04 | https://www.instagram.com/reel/Ddy4dP2ggJJ/ | DBZ guys | 26.80 s | not relayed | [`V04-dbz-guys.json`](data/videos/V04-dbz-guys.json) |
+| V05 | https://www.instagram.com/reel/DdyxnNiDyix/ | How did you know I'm Slovak?? | 25.90 s | not relayed | [`V05-slovak.json`](data/videos/V05-slovak.json) |
+| V06 | https://www.instagram.com/reel/DdyBfgGjEla/ | elite ball knowledge *(caption ≠ content: FNAF lore)* | 30.10 s | not relayed | [`V06-fnaf-lore.json`](data/videos/V06-fnaf-lore.json) |
+| V07 | https://www.instagram.com/reel/Ddx6nlWlfCF/ | goldmine of stuff | 28.10 s | not relayed | [`V07-goldmine-of-stuff.json`](data/videos/V07-goldmine-of-stuff.json) |
+| V08 | https://www.instagram.com/reel/DdxfJ9dE9Cs/ | hungry games | 25.10 s | not relayed | [`V08-hungry-games.json`](data/videos/V08-hungry-games.json) |
+| V09 | https://www.instagram.com/reel/DdxKkH3Dz27/ | frat boys | 25.50 s | not relayed | [`V09-frat-boys.json`](data/videos/V09-frat-boys.json) |
 
 ## 1.3 Candidate video URLs (still unverified)
 
@@ -44,11 +59,11 @@ Search-engine summaries and third-party pages made the claims below. A lead only
 
 | Lead | Where it appeared | Status |
 | --- | --- | --- |
-| Children Of Khan is Luca Maxim's apparel brand, and it appears at the end of his Shorts with a link | Search summary of the Wikitubia page (blocked) | **Seen in V01**: it ends with "Get yours at childrenofkhan.com. Link in bio." |
-| The brand's ads are AI-generated "PS2-style" videos | Search summaries | **Seen in V01**: PS2 / early-2000s game aesthetic |
-| The line "You met me at a very Chinese time in my life" is associated with the Dante character | Search summaries, KYM page title, X posts by @Naexthaniel and via `x.com/i/status/2099110220572070277` | **Seen in V01**: spoken verbatim as the tag |
-| The phrase appears on a Children Of Khan shirt | Search summary only | **Seen in V01**: the red crewneck carries the phrase. The exact print still needs transcribing. |
-| The phrase parodies the *Fight Club* (1999) line "You met me at a very strange time in my life." | KYM summary. The *Fight Club* line itself is a known quote. | Confirm the videos play off it and aren't simply using it |
+| Children Of Khan is Luca Maxim's apparel brand, and it appears at the end of his Shorts with a link | Search summary of the Wikitubia page (blocked) | **Confirmed 9/9**: every reel ends with "Get yours at childrenofkhan.com. Link in bio." and a www.childrenofkhan.com end card |
+| The brand's ads are AI-generated "PS2-style" videos | Search summaries | **Confirmed 9/9**: older-game-model Dante |
+| The line "You met me at a very Chinese time in my life" is associated with the Dante character | Search summaries, KYM page title, X posts by @Naexthaniel and via `x.com/i/status/2099110220572070277` | **Confirmed 9/9**: Dante speaks it as the last joke line |
+| The phrase appears on a Children Of Khan shirt | Search summary only | **Confirmed 9/9**: the red crewneck is printed "You met me at a very Chinese time in my life." |
+| The phrase parodies the *Fight Club* (1999) line "You met me at a very strange time in my life." | KYM summary. The *Fight Club* line itself is a known quote. | Wording matches the parody pattern. Whether the videos reference *Fight Club* beyond the line hasn't been assessed. |
 | Other recurring Luca characters: Yakub, Selim Kerimov, Skebob | Search summary of Wikitubia | Only relevant if they appear in Dante videos |
 
 ## 1.5 What Phase 1 will capture per video

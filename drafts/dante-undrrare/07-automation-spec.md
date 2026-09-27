@@ -4,6 +4,14 @@ This spec turns one input record into one video concept. The input and output sh
 
 Machine-readable versions: [`schema/concept.schema.json`](schema/concept.schema.json) (generator input and output) and [`schema/video-record.schema.json`](schema/video-record.schema.json) (research record).
 
+> **Update (V01–V09):** the Dante grammar is now derived (see [`03-grammar-and-recall.md`](03-grammar-and-recall.md)). These `PENDING_DANTE` values can now be filled from it:
+> - runtime: 23–30 s
+> - beat order: hook → specifics → turn → tag → CTA → end card, with measured timings
+> - callback position: last joke line, at ~66–76 % of runtime
+> - reveal rule: product worn throughout → tag spoken while the print is visible → hard cut to white catalog card
+>
+> The ÜNDRRARE-specific choices this depends on are in [`08-open-questions.md`](08-open-questions.md) §E. I haven't filled in the translation yet.
+
 ## 7.1 Pipeline
 
 ```

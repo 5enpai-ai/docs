@@ -8,6 +8,12 @@
    - the exact printed garment text
    - who speaks (the on-screen character or a narrator)
    - music and SFX
+1b. **Remaining gaps in the V01–V09 handoff** (for the local session):
+   - **Tag wording for V02–V09:** the verbatim spoken tag and CTA for each reel. The transcripts say only "recurring tag" / "CTA", so the 9/9 wording currently rests on the packet's constant.
+   - **Which cut starts the end card:** a label for each detected cut. In every reel the last cut lands 0.7–1.9 s *after* the CTA starts, so the end card may start before or during the CTA.
+   - **Music and SFX:** an audit per reel.
+   - **V01 escalation:** whether V01 has a separate escalation beat, or whether the list really is one sentence.
+   - **Sample size:** whether 9 reels is the whole Dante series or a sample. If more exist, name them so the frequencies can be recounted.
 2. **Which videos count as "Luca Maxim Dante videos"?** Only originals from @Santeluca / @santeluca / @lucamaxiim, or also Children Of Khan brand-account posts? Reposts by third parties will be excluded unless you say otherwise.
 
 ## B. Brand conflicts I found and did not resolve
@@ -35,6 +41,8 @@
 11. **IP clearance.** Killua (Shueisha / Yoshihiro Togashi) and Zero Two (Studio Trigger / A-1 Pictures / CloverWorks) are copyrighted characters. Using them in commercial ads for ÜNDRRARE carries infringement and platform takedown risk. Has this been reviewed, or should the system also support original stand-in characters?
 12. **AI disclosure.** Do you want a standing label for AI-generated video on TikTok, Instagram and YouTube?
 
-## E. Can't be decided until the videos are watched
+## E. Translation decisions raised by the Dante findings
 
-13. The runtime target, beat order and timing, callback wording, callback position, render style, voice style, music and ending. These are all `PENDING_DANTE` in the spec.
+13. **Full sentence or two words?** The Dante tag is a *full sentence* printed verbatim on the garment and spoken whole. The SEEK garments carry two-word phrases (`SEEK` + `TRUTH` / `Reality`) plus the rotational `SEEK` / `REALITY` back. Should the ÜNDRRARE tag be exactly the printed words, or a spoken sentence built around them?
+14. **What does the China turn become?** Dante's turn relies on national and ethnic framing ("because I'm Chinese", "my supplier in Guangdong"). The ÜNDRRARE equivalent needs its own "earn it" turn that makes TRUTH or REALITY the natural answer. Keep national and ethnic stereotypes out of our version?
+15. **The CTA:** the Dante CTA is a spoken URL plus "Link in bio." Which URL and wording should ours use? The ÜNDRRARE storefront domain isn't in the sources I have.

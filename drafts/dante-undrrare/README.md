@@ -6,10 +6,10 @@ Research and systems-design workspace. Nothing here is published: the `drafts/` 
 
 | Phase | Status | Why |
 | --- | --- | --- |
-| 1. Source collection | **In progress: 1 verified (V01)** | Footage is inspected by the local research session through the user's logged-in Instagram (@lucamaxiim), and structured records are relayed here. This cloud session still can't reach video hosts. |
-| 2. Dante format database | **1 video logged** | V01 filled in. 12 watch-list elements, all "isolated" until they recur. |
-| 3. Video grammar | **Pending more videos** | V01's beat order is recorded as a single observation, not a template. |
-| 4. Brand-recall mechanism | **V01 measured** | The recurring line is confirmed in V01 as spoken tag and garment print at once. Whether it recurs across videos is still open. |
+| 1. Source collection | **9 verified (V01–V09)** | The local Codex research session verified the reels through the user's logged-in Instagram (@lucamaxiim) and relayed structured records here. This cloud session can't reach video hosts. Music and SFX are still UNVERIFIED. |
+| 2. Dante format database | **Done for the 9-reel sample** | 11 constants, and variables with frequencies. |
+| 3. Video grammar | **Done: timed template** | Computed min / median / max timings for 6 functions, plus 3 variants of the China turn |
+| 4. Brand-recall mechanism | **Done: supported 9/9** | The tag is identical to the garment print, is spoken as the last joke line while visible, and is paid off by the catalog end card and CTA. |
 | 5. ÜNDRRARE translation | **Partial** | Brand constraints and inputs are documented. The beat structure waits on Phase 3. |
 | 6. Collection language | **Partial** | The verified on-garment text is documented, including a rotational SEEK / REALITY back graphic. No slogan chosen, as you asked. |
 | 7. Character application | **Draft done** | Built from each character's canon. Only the "where SEEK TRUTH / REALITY enters" part depends on the Dante findings. |
@@ -36,7 +36,9 @@ Research and systems-design workspace. Nothing here is published: the `drafts/` 
 Supporting files:
 
 - [`data/products.json`](data/products.json): machine-readable product records
-- [`data/videos/`](data/videos/): one verified record per watched Dante video
+- [`data/videos/`](data/videos/): one verified record per watched Dante video (V01–V09)
+- [`tools/timing_stats.py`](tools/timing_stats.py): recomputes the timing grammar from the records
+- [`tools/build_records_v01_v09.py`](tools/build_records_v01_v09.py): encodes the V01–V09 handoff as records
 - [`schema/video-record.schema.json`](schema/video-record.schema.json): one record per watched Dante video (the Phase 1 fields)
 - [`schema/concept.schema.json`](schema/concept.schema.json): generator input and output
 - [`tools/collect_dante.sh`](tools/collect_dante.sh): runs Phase 1 once video hosts are reachable (download, scene frames, transcript)

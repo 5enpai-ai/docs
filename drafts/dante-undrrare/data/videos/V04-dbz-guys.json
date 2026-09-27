@@ -1,6 +1,6 @@
 {
-  "id": "V01",
-  "url": "https://www.instagram.com/reel/DdzNE-nlZy7/",
+  "id": "V04",
+  "url": "https://www.instagram.com/reel/Ddy4dP2ggJJ/",
   "verification": "watched",
   "provenance": {
     "uploader": "@lucamaxiim",
@@ -8,37 +8,46 @@
     "upload_date": null,
     "platform": "instagram",
     "inspected_by": "Verified by local Codex research session (reel downloaded, watched, transcribed and frame-sampled). This cloud session didn't view the media directly.",
-    "media_path": "/Volumes/lacie/watch-work/luca-dante/gym-guys/"
+    "media_path": "/Volumes/lacie/watch-work/luca-dante/ (reel folder name not in the handoff)"
   },
-  "title_or_caption": "Gym guys",
+  "title_or_caption": "DBZ guys",
   "content_vs_caption": null,
-  "duration_s": 22.83,
+  "duration_s": 26.8,
   "characters": [
-    "Dante (Devil May Cry): white-haired, goggled older-game-model look, on-screen speaker",
-    "second gym-goer (atmospheric)"
+    "Dante (Devil May Cry): white-haired, goggled older-game-model look, on-screen speaker"
   ],
-  "setting": "Wide futuristic silver home gym / living room",
-  "topic_group": "social type",
-  "opening_hook": "third-person stereotype list ('She'll never find another …'): \"She'll never find another Gymshark-wearing, white-Monster-drinking, Deftones-listening, mirror-selfie-taking guy who eats a plain chicken breast in his car and calls that a personality.\"",
+  "setting": "Fantasy city / sky scene with cloud",
+  "topic_group": "fandom",
+  "opening_hook": "categorical verdict ('X fans are the weirdest people'): \"Dragon Ball fans are the weirdest people.\"",
   "dialogue": [
     {
       "t_start": 0,
       "speaker": "Dante (on-screen speaker)",
-      "line": "She'll never find another Gymshark-wearing, white-Monster-drinking, Deftones-listening, mirror-selfie-taking guy who eats a plain chicken breast in his car and calls that a personality."
+      "line": "Dragon Ball fans are the weirdest people."
+    },
+    {
+      "t_start": 2,
+      "speaker": "Dante (on-screen speaker)",
+      "line": "They'll argue for hours about power levels and who Goku can solo, constantly saying stuff like, 'It's over 9,000.'"
     },
     {
       "t_start": 8,
       "speaker": "Dante (on-screen speaker)",
-      "line": "My supplier in Guangdong eats what his mom cooks, lifts boxes for a living, and has never once made that his entire personality."
+      "line": "Bro, the only thing over 9,000 is your weight."
     },
     {
-      "t_start": 15,
+      "t_start": 12,
+      "speaker": "Dante (on-screen speaker)",
+      "line": "My supplier's nephew in Guangzhou watches the same show and has never once scaled anybody. He just likes the yelling and the bright colors."
+    },
+    {
+      "t_start": 18,
       "speaker": "Dante",
       "line": "You met me at a very Chinese time in my life.",
       "delivery": "recurring tag"
     },
     {
-      "t_start": 18,
+      "t_start": 20,
       "speaker": "Dante",
       "line": "Get yours at childrenofkhan.com. Link in bio.",
       "delivery": "CTA"
@@ -50,17 +59,22 @@
       "t_start": 0
     },
     {
+      "function": "escalation",
+      "t_start": 2,
+      "lines": 2
+    },
+    {
       "function": "pivot",
-      "t_start": 8,
+      "t_start": 12,
       "type": "supplier"
     },
     {
       "function": "tag",
-      "t_start": 15
+      "t_start": 18
     },
     {
       "function": "cta",
-      "t_start": 18
+      "t_start": 20
     }
   ],
   "pivot_type": "supplier",
@@ -69,7 +83,7 @@
     {
       "text": "You met me at a very Chinese time in my life.",
       "timestamps": [
-        15
+        18
       ],
       "channel": "mixed",
       "beat_function": "last joke line before the CTA, spoken while the same text is printed on Dante's crewneck"
@@ -84,21 +98,21 @@
     "entry_into_joke": "Worn through the comedy. Semantically central at the spoken/printed tag. Then isolated on a white-background garment/model end card with www.childrenofkhan.com."
   },
   "props": [
-    "exaggerated weights / gym equipment"
+    "Frieza-like figure",
+    "cloud"
   ],
   "editing": {
     "cut_times_s": [
-      0.97,
-      5.07,
-      8.1,
-      15.3,
-      18.7
+      5.63,
+      12.37,
+      16.47,
+      21.93
     ],
-    "shot_count": 6,
-    "avg_shot_s": 3.8,
+    "shot_count": 5,
+    "avg_shot_s": 5.36,
     "transitions": "Hard cut to a white-background catalog / model end card"
   },
-  "visual_notes": "Opens wide: Dante reclines on a silver couch at left, and a second gym-goer sits hunched by a weight bench/rack at right. Dante rises, crosses the room and handles exaggerated weights and equipment. The second figure stays atmospheric.",
+  "visual_notes": "Dante holds a Frieza-like figure/object and appears on a cloud. Then a product cutout and a model end card.",
   "render_characteristics": "Older-game-model (PS2 / early-3D) look",
   "voice": "One male voice presented as Dante's speech",
   "on_screen_text": "Bold white captions with dark outline/shadow throughout. www.childrenofkhan.com on the end card.",
@@ -117,7 +131,8 @@
     "music (UNVERIFIED)",
     "SFX (UNVERIFIED)",
     "tag and CTA line end times",
-    "upload date"
+    "upload date",
+    "verbatim tag and CTA wording for this reel: the handoff transcript says only 'recurring tag' / 'CTA', and the wording here comes from the packet's 9/9 constants (#6, #7)"
   ],
-  "notes": "Speaker evidence: changing mouth/face animation on Dante; no separate narrator appears on screen."
+  "notes": null
 }
