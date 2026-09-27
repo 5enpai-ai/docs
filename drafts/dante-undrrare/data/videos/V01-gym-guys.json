@@ -1,0 +1,85 @@
+{
+  "id": "V01",
+  "url": "https://www.instagram.com/lucamaxiim/reel/DdzNE-nlZy7/",
+  "verification": "watched",
+  "provenance": {
+    "uploader": "@lucamaxiim",
+    "is_luca_original": true,
+    "upload_date": null,
+    "platform": "instagram",
+    "inspected_by": "Local Codex research session (user's logged-in browser). The session relayed its findings as text; this repo session hasn't seen the footage itself.",
+    "media_path": "/Volumes/lacie/watch-work/luca-dante/gym-guys/"
+  },
+  "title_or_caption": "Gym guys",
+  "duration_s": 22.83,
+  "characters": [
+    "Dante (Devil May Cry): white-haired, PS2 / early-3D game-style model",
+    "Another gym-goer (unnamed)"
+  ],
+  "setting": "Surreal silver/futuristic home gym",
+  "opening_hook": "Immediately recognizable stereotype list, delivered as fast continuous voiceover. First-frame visual not described in the relay.",
+  "dialogue": [
+    {
+      "t_start": null,
+      "speaker": "Voiceover (speaker attribution not stated in the relay)",
+      "line": "She'll never find another Gymshark-wearing, white-Monster-drinking, Deftones-listening, mirror-selfie-taking guy who eats a plain chicken breast in his car and calls that a personality."
+    },
+    {
+      "t_start": null,
+      "speaker": "Voiceover",
+      "line": "My supplier in Guangdong eats what his mom cooks, lifts boxes for a living, and has never once made that his entire personality."
+    },
+    {
+      "t_start": null,
+      "speaker": "Voiceover",
+      "line": "You met me at a very Chinese time in my life."
+    },
+    {
+      "t_start": null,
+      "speaker": "Voiceover",
+      "line": "Get yours at childrenofkhan.com. Link in bio."
+    }
+  ],
+  "joke_premise": "Mocking a gym-guy stereotype by listing its markers",
+  "escalation": "Contrast with 'my supplier in Guangdong', who does the real version of the same things without making it a personality",
+  "punchline": "Absurd, deadpan superiority payoff that resolves into the recurring line",
+  "final_line": "Get yours at childrenofkhan.com. Link in bio.",
+  "recurring_phrases": [
+    {
+      "text": "You met me at a very Chinese time in my life.",
+      "timestamps": [],
+      "channel": "mixed",
+      "beat_function": "Spoken absurdist tag, delivered while the same copy printed on the garment is readable"
+    }
+  ],
+  "product": {
+    "item": "Red Children of Khan crewneck worn by Dante",
+    "visible_text": "Reported to carry the recurring phrase. Exact printed wording, casing and layout not yet transcribed.",
+    "first_on_screen_s": null,
+    "text_readable_s": [],
+    "entry_into_joke": "Present on Dante the whole time. Becomes semantically central at the recurring line, which is spoken while the print is readable. Then a hard cut to a clean product-model / catalog shot, followed by the CTA."
+  },
+  "camera": "Medium and close framing alternating with wider environment shots",
+  "framing": "Dante moves through the gym and lifts or carries exaggerated equipment",
+  "editing": {
+    "cut_times_s": [],
+    "avg_shot_s": null,
+    "transitions": "Hard cut from the story to the product shot"
+  },
+  "render_characteristics": "PS2 / early-2000s game aesthetic",
+  "voice": "Fast continuous voiceover",
+  "on_screen_text": "Embedded white lower-third captions",
+  "sfx": [],
+  "music": null,
+  "ending_structure": "Recurring line → hard cut to catalog product shot → direct CTA plus link-in-bio",
+  "repeated_from_other_videos": [],
+  "missing_from_relay": [
+    "per-line timestamps",
+    "cut times / shot count",
+    "exact printed garment text",
+    "who speaks (Dante on screen vs. narrator)",
+    "music and SFX",
+    "what the second gym-goer does",
+    "first-frame description"
+  ]
+}

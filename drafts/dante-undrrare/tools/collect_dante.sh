@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# Phase 1 collector. Needs network access to the video hosts (see ../README.md).
+# Phase 1 collector (fallback). The primary route is the local session via the logged-in
+# Instagram browser, with media stored on /Volumes/lacie/watch-work/luca-dante/.
+# Needs network access to the video hosts (see ../README.md).
 # For each URL: download the video, list metadata, extract scene-change frames,
 # and produce a timestamped transcript. You still watch each video; the output
 # feeds the video record (../schema/video-record.schema.json).

@@ -2,10 +2,12 @@
 
 ## A. Blocking the research
 
-1. **How should we get access to the Dante videos?** Choose one:
-   - allow the video hosts in the environment's network settings (list in `README.md`)
-   - put the videos in Google Drive
-   - authorize Higgsfield video analysis (the account has 0 credits)
+1. ~~How should we get access to the Dante videos?~~ **Resolved:** the local session uses the logged-in Instagram browser, with media stored on `/Volumes/lacie/…`. For relayed records, please include the following so the grammar can be timed:
+   - per-line timestamps
+   - cut times
+   - the exact printed garment text
+   - who speaks (the on-screen character or a narrator)
+   - music and SFX
 2. **Which videos count as "Luca Maxim Dante videos"?** Only originals from @Santeluca / @santeluca / @lucamaxiim, or also Children Of Khan brand-account posts? Reposts by third parties will be excluded unless you say otherwise.
 
 ## B. Brand conflicts I found and did not resolve

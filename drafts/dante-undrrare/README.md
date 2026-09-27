@@ -6,10 +6,10 @@ Research and systems-design workspace. Nothing here is published: the `drafts/` 
 
 | Phase | Status | Why |
 | --- | --- | --- |
-| 1. Source collection | **Blocked: 0 videos watched** | The session's network policy blocks every video host (youtube.com, tiktok.com, instagram.com, x.com, knowyourmeme.com, archive.org). Only web-search result titles and URLs could be seen. Your Google Drive and Notion have no copies of the Dante videos. Higgsfield video analysis could read YouTube links, but the account has 0 credits, and you didn't authorize spending. |
-| 2. Dante format database | **Pending Phase 1** | Constants, variables and frequency need watched videos. The empty coding sheet is ready. |
-| 3. Video grammar | **Pending Phase 1** | Not derived. I didn't assume a structure. |
-| 4. Brand-recall mechanism | **Pending Phase 1** | Not analyzed. Search results name a recurring line; it's recorded as a lead to verify, not as evidence. |
+| 1. Source collection | **In progress: 1 verified (V01)** | Footage is inspected by the local research session through the user's logged-in Instagram (@lucamaxiim), and structured records are relayed here. This cloud session still can't reach video hosts. |
+| 2. Dante format database | **1 video logged** | V01 filled in. 12 watch-list elements, all "isolated" until they recur. |
+| 3. Video grammar | **Pending more videos** | V01's beat order is recorded as a single observation, not a template. |
+| 4. Brand-recall mechanism | **V01 measured** | The recurring line is confirmed in V01 as spoken tag and garment print at once. Whether it recurs across videos is still open. |
 | 5. ÜNDRRARE translation | **Partial** | Brand constraints and inputs are documented. The beat structure waits on Phase 3. |
 | 6. Collection language | **Partial** | The verified on-garment text is documented, including a rotational SEEK / REALITY back graphic. No slogan chosen, as you asked. |
 | 7. Character application | **Draft done** | Built from each character's canon. Only the "where SEEK TRUTH / REALITY enters" part depends on the Dante findings. |
@@ -36,20 +36,21 @@ Research and systems-design workspace. Nothing here is published: the `drafts/` 
 Supporting files:
 
 - [`data/products.json`](data/products.json): machine-readable product records
+- [`data/videos/`](data/videos/): one verified record per watched Dante video
 - [`schema/video-record.schema.json`](schema/video-record.schema.json): one record per watched Dante video (the Phase 1 fields)
 - [`schema/concept.schema.json`](schema/concept.schema.json): generator input and output
 - [`tools/collect_dante.sh`](tools/collect_dante.sh): runs Phase 1 once video hosts are reachable (download, scene frames, transcript)
 
-## Unblocking Phase 1
+## How footage gets in
 
-Pick any one of these:
-
-1. **Allow the hosts** in the cloud environment's network settings (environment menu → **Edit** → **Network access**): `youtube.com`, `*.googlevideo.com`, `*.ytimg.com`, `tiktok.com`, `*.tiktokcdn.com`, `instagram.com`, `*.cdninstagram.com`, and `huggingface.co` for the transcription model. Then run `tools/collect_dante.sh`.
-2. **Put the videos in Google Drive** (screen recordings or downloads) and share the folder. Drive is reachable from this session.
-3. **Authorize Higgsfield video analysis** on YouTube links. Credits are at 0, so this also needs a top-up.
+- **Primary route:** the local Codex session reads reels through the user's logged-in Instagram browser. It downloads Instagram's separate signed video and audio streams, merges them, samples frames and transcribes locally.
+- **Storage:** media and raw analysis live only at `/Volumes/lacie/watch-work/luca-dante/<reel-folder>/`, on the external drive, never the internal one. This repo holds only the structured records (`data/videos/*.json`).
+- **Unverified candidates:** a candidate stays **UNVERIFIABLE** until its footage and audio have been inspected.
+- **Tools:** use OpenArt, not Higgsfield, for any later *authorized* generation or video analysis. No generation credits are spent during research.
+- `tools/collect_dante.sh` is a fallback, for a machine that has network access to the video hosts.
 
 ## Ground rules followed
 
 - No Dante dialogue, beat, timing or shot is described anywhere in this workspace, because none was watched.
 - Product facts come only from Shopify and the Printify print files. Anything I couldn't read is marked `UNVERIFIED`.
-- No HOSHOKU manga canon, no claymation material, no generation credits spent, nothing published.
+- No HOSHOKU manga canon, no claymation material, no generation credits spent, nothing published. Higgsfield is not used.

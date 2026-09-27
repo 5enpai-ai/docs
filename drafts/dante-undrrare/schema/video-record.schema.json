@@ -14,7 +14,9 @@
         "uploader": {"type": "string"},
         "is_luca_original": {"type": ["boolean", "null"]},
         "upload_date": {"type": ["string", "null"]},
-        "platform": {"enum": ["youtube", "tiktok", "instagram", "facebook", "other"]}
+        "platform": {"enum": ["youtube", "tiktok", "instagram", "facebook", "other"]},
+        "inspected_by": {"type": "string", "description": "Who actually watched the footage"},
+        "media_path": {"type": ["string", "null"], "description": "Where the media lives. Never inside this repo."}
       }
     },
     "title_or_caption": {"type": ["string", "null"]},
@@ -28,8 +30,8 @@
         "type": "object",
         "required": ["t_start", "speaker", "line"],
         "properties": {
-          "t_start": {"type": "number"},
-          "t_end": {"type": "number"},
+          "t_start": {"type": ["number", "null"]},
+          "t_end": {"type": ["number", "null"]},
           "speaker": {"type": "string"},
           "line": {"type": "string", "description": "Verbatim"},
           "delivery": {"type": "string"}
@@ -74,10 +76,12 @@
     },
     "render_characteristics": {"type": ["string", "null"]},
     "voice": {"type": ["string", "null"]},
+    "on_screen_text": {"type": ["string", "null"]},
     "sfx": {"type": "array", "items": {"type": "string"}},
     "music": {"type": ["string", "null"]},
     "ending_structure": {"type": ["string", "null"]},
     "repeated_from_other_videos": {"type": "array", "items": {"type": "string"}},
+    "missing_from_relay": {"type": "array", "items": {"type": "string"}},
     "notes": {"type": ["string", "null"]}
   }
 }

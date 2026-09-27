@@ -92,4 +92,4 @@ Your conceptual chain went straight from premise to escalation. I kept escalatio
 - **Batch size:** each batch is a grid of *character × product × trait × property*, with one concept per cell.
 - **Near-duplicates:** no two concepts in a batch may share the same `premise_type` and `trait_id`.
 - **Callback wording:** it stays identical across a batch *only if* §3.2 finds identical wording in the Dante videos. If it finds variation, the allowed variants are listed and rotated.
-- **No auto-generation:** the output is a text concept only. Rendering video is a separate, manually authorized step, because it spends credits.
+- **No auto-generation:** the output is a text concept only. Rendering video is a separate, manually authorized step, because it spends credits. That step runs on **OpenArt**, not Higgsfield.

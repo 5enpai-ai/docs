@@ -25,7 +25,7 @@ The format must have all of these. How each is achieved is `PENDING_DANTE`.
 3. **No predator/prey or hunting language** in dialogue, captions or on-screen text.
 4. **Calm, non-salesy voice**, but the video still has to sell.
 5. **Vocabulary:** "Archive Entry", "Artifact" and "Recovered" instead of "Collection", "Product" and "Release" in any branded caption or end card (v1.0 bible). Whether that applies to *spoken dialogue* is an open question.
-6. **Tooling order:** use Canva and existing assets first. No generation credits without explicit authorization.
+6. **Tooling order:** use Canva and existing assets first. No generation credits without explicit authorization. When generation or video analysis is authorized, use OpenArt, not Higgsfield.
 7. **Kept separate:** the HOSHOKU manga canon and the claymation project stay out of this system. This conflicts with the Brand Bible, which files SEEK under HOSHOKU (→ open questions).
 
 ## 6.3 Collection language: verified raw material only (Phase 6)
