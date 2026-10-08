@@ -69,3 +69,5 @@ CANON LOCK rows, Reference Library rows, Visual Language, Color System, Typograp
 
 ## 6. Priority order — one evidence-based flag
 Your stated order puts the influencer first. The evidence says: the influencer and PROJKT OBJKT have **zero source material**, while HOSHOKU and Beanie 2.0 have approved canon, a live product, a master image, and the $1,000/mo target. I recommend **starting generation tests on HOSHOKU identity and Beanie 2.0 (Priority 2–3) on Day 1** while the influencer spec waits on D1, and then running Priority 1 as soon as D1 lands. This isn't demoting the influencer, only unblocking it. Your call (D5).
+
+> **Update (handoff 2):** The VANTA/PROJKT OBJKT/Higgsfield decisions in this file were refined by your later instructions. See `HANDOFF.md` and `03-GENERATION-ACCESS.md`. Where they differ, those win.

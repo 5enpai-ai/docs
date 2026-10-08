@@ -36,3 +36,5 @@ Rule: if a test fails, log the cause before re-running. Stop a model after 2 fai
 5. **Authorize or decline creating a tracking home.** I'd like to create a "7-Day Sprint" page/database in Notion (new page only, existing canon untouched). Otherwise everything lives in this repo's `production/` folder. Say "repo only" or "Notion too."
 
 Nothing above spends credits.
+
+> **Update (handoff 2):** The VANTA/PROJKT OBJKT/Higgsfield decisions in this file were refined by your later instructions. See `HANDOFF.md` and `03-GENERATION-ACCESS.md`. Where they differ, those win.
