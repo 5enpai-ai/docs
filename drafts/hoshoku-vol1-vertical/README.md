@@ -9,12 +9,26 @@ A vertical webtoon recreation of the existing manga (Canva `DAG9IhSY4Xo`, pages 
 >
 > | | |
 > |---|---|
-> | **Chapter 1 vertical edition** | **CANON LOCKED 🔒.** No more generation for Ch. 1. The remaining work is packaging and uploading only. |
+> | **Chapter 1 vertical edition** | **LOCK SUSPENDED (2026-10-09).** D'nuke flagged that the Canva manga pages do not hold every Chapter 1 panel. The edition was built only from the panels placed on Canva pages 1–12, so it may be incomplete. See *Completeness check* below. |
 > | **Chapter 2** | **HOLD after the mirror scene (14d)**, until the story beats (Section E) are set. |
 > | **Canva** | **Update approved and done. Merging into one design is not yet approved.** The original designs are untouched. |
 > | **Remaining credits** | **6,227** |
 >
 > The Ch. 2 opening panels (13a–14d) are also corrected to match the source, but Ch. 2 as a whole stays on hold.
+
+## Completeness check (2026-10-09)
+
+The vertical edition was built only from the art **placed on** Canva pages 1–14 of `DAG9IhSY4Xo`. The `Hoshoku` folder (`FAHM5-EhqDY`) holds **21 images that are not placed on any manga page**. I viewed them in a Canva draft that was discarded without saving. Labelled sheet: `reference/unplaced_canva_art.jpg`.
+
+| Group | Images | What they show (OBSERVED) |
+|---|---|---|
+| **A. No equivalent on the manga pages** (possible missing panels) | p_20 (a), p_20 (b), p_21 (a), p_22, Image to Image-1767524494000 (1), Image to Image-1767530090000, Image to Image-1767454600000 | Hospital room with masked staff; POV of ceiling lights; Broly sitting up in a hospital bed in a gown; Broly facing a dark capped figure; a second hospital-room take; a gloved hand holding a syringe/IV; Broly stumbling in the rain-soaked courtyard |
+| **B. Alternate takes of panels already placed** | p_25 alt, barracks_with_sleeping_silhouettes, Panel 04, Panel 07, Panel 09, Panel 09 alt, Panel 10, p_42, p_44, p_47, p_48 | Alternate takes of 2-a, 2-e, 3-a, 3-b, the 5-c/6 close-up, 13-a, 13-c, 14-a and 14-b |
+| **C. Covers / brand art** (not story panels) | 18391518008998717460.png, 52c2a3e7….png, Chapter Card | "FLASHBACK / EPISODE 1" cover, a vertical cover, the chibi logo |
+
+**Not checkable from here:** the published Webtoon episode (`webtoons.com` is blocked). Panels that exist only on Webtoon and not in Canva can't be found this way.
+
+**Undecided (D'nuke):** which group A images belong in Chapter 1, in what order, and whether the published Webtoon has other panels. No generation until that is settled.
 
 ## Approval gates (2026-09-26)
 
@@ -162,5 +176,5 @@ Set `HOSHOKU_SOURCE_CAPTIONS=1` to render without the PROPOSED Broly-voice capti
 
 - **Canva merge: deferred.** The modular locked set (cover + parts 01–10) is the deliverable. Combining it into one design would create a new derivative design, so it stays a separate, explicit action.
 - **Chapter 2:** held after the mirror scene until the story beats (E in the audit) are set. Nothing past page 14 has been generated.
-- **Chapter 1: production CLOSED** (2026-09-26). The 55 slices are in locked reading order.
+- **Chapter 1: production REOPENED for a completeness check** (2026-10-09). The 55 slices cover only the panels placed on the Canva pages. See *Completeness check*.
 - **Project focus: Chapter 2 story development.** Define the beats after the mirror scene first; generate nothing until they are set. Groundwork: `drafts/hoshoku-ch2-groundwork.md` (beat intake sheet, open threads T1–T20, canon questions Q1–Q7).
