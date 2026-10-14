@@ -1,0 +1,45 @@
+<title>Seven Day Gen Queue</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+/* Single-column phone queue; one committed dark look */
+:root{--bg:#121014;--card:#1d1a21;--fg:#efeaf2;--mute:#9a91a3;--acc:#ff8a3d;--line:#2e2934;color-scheme:dark;
+--disp:"Unbounded",system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:640px;margin:0 auto;display:grid;gap:14px}
+h1{font:600 1.5rem/1.2 var(--disp);margin:0;text-wrap:balance}
+h2{font:600 .8rem var(--disp);letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin:18px 0 0}
+.intro{color:var(--mute);margin:0}.intro b{color:var(--fg)}
+ol.flow{margin:0;padding-left:20px;display:grid;gap:4px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:12px}
+.job header{display:flex;align-items:center;gap:10px}
+.job h3{margin:0;font-size:1rem;flex:1;min-width:0}
+.tag{font:600 .7rem var(--disp);background:var(--acc);color:var(--bg);padding:3px 7px;border-radius:4px}
+.done{color:var(--mute);font-size:.85rem;display:flex;gap:5px;align-items:center}
+.job:has(input:checked){opacity:.45}
+.step{display:grid;gap:8px;min-width:0}
+.lab{font-size:.78rem;color:var(--mute);text-transform:uppercase;letter-spacing:.05em}.lab b{color:var(--fg)}
+.refs{display:flex;flex-wrap:wrap;gap:6px}
+.ref{color:var(--acc);border:1px solid var(--acc);border-radius:20px;padding:4px 10px;font-size:.85rem;text-decoration:none}
+.pr{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px;font-size:.9rem;user-select:all}
+button{font:600 .9rem var(--body);background:var(--fg);color:var(--bg);border:0;border-radius:6px;padding:10px;cursor:pointer}
+button:focus-visible,.ref:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.muted{color:var(--mute);font-size:.85rem}
+</style>
+<main>
+<h1>Seven day gen queue</h1>
+<p class="intro">Unlimited week, Oct 14–20. <b>Keep one image and one video job running at all times.</b> Work top to bottom and tick each card off when it's done.</p>
+<ol class="flow">
+<li>Tap the product chip, long-press the image and save it to Photos.</li>
+<li>In Higgsfield, pick the image model shown with Unlimited on. Tap <b>+</b> to attach the photo, paste the image prompt and run it 2–4 times.</li>
+<li>While those run, start the previous card's video. Switch to <b>Wan 3.0</b>, attach your best image as the start frame and paste the video prompt.</li>
+<li>Save the winners to folders: site, stream, social.</li>
+</ol>
+%%CARDS%%
+<p class="muted">Finished the list? Loop back and run every card again in the other aspect ratio, 16:9 ↔ 9:16. The Dante and Killua looks are fan-cosplay style, so keep them on social and leave them out of paid ads.</p>
+</main>
+<script>
+document.querySelectorAll('button[data-t]').forEach(b=>b.onclick=()=>{const t=document.getElementById(b.dataset.t);
+navigator.clipboard.writeText(t.textContent).then(()=>{b.textContent='Copied';setTimeout(()=>b.textContent=b.textContent.replace('Copied','Copy again'),1500)},()=>{const r=document.createRange();r.selectNodeContents(t);const s=getSelection();s.removeAllRanges();s.addRange(r)})});
+document.querySelectorAll('.done input').forEach(c=>{try{c.checked=localStorage.getItem(c.id)==='1'}catch(e){}c.onchange=()=>{try{localStorage.setItem(c.id,c.checked?'1':'0')}catch(e){}}});
+</script>
