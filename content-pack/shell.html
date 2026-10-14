@@ -24,6 +24,19 @@ ol.flow{margin:0;padding-left:20px;display:grid;gap:4px}
 .pr{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px;font-size:.9rem;user-select:all}
 button{font:600 .9rem var(--body);background:var(--fg);color:var(--bg);border:0;border-radius:6px;padding:10px;cursor:pointer}
 button:focus-visible,.ref:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.tl,.proj{display:grid;gap:12px}
+.day{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:start;border-top:1px solid var(--line);padding-top:8px}
+.dlab{font:600 .8rem var(--disp)}.dlab span{display:block;font:400 .75rem var(--body);color:var(--mute)}
+.dits,.pn{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
+.pn{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding-block:8px;z-index:2}
+.pill{font-size:.8rem;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-left:3px solid var(--k);border-radius:4px;padding:3px 8px}
+.p-C{--k:var(--acc)}.p-M{--k:#d94a4a}.p-V{--k:#3bbed1}.p-B{--k:#c9b48a}.p-S{--k:#9a91a3}
+.tag.p-C,.tag.p-M,.tag.p-V,.tag.p-B,.tag.p-S{background:var(--k)}
+.day-s{font-size:.75rem;color:var(--mute)}
+.ref{display:inline-flex;flex-direction:column;line-height:1.2}.ref small{font-size:.65rem;opacity:.7;text-transform:uppercase;letter-spacing:.05em}
+.s-step{color:var(--fg);border-color:var(--mute)}
+.goes{font-size:.85rem;color:var(--mute);border-top:1px solid var(--line);padding-top:8px}
+html{scroll-padding-top:60px}
 .muted{color:var(--mute);font-size:.85rem}
 </style>
 <main>
@@ -31,11 +44,11 @@ button:focus-visible,.ref:focus-visible{outline:2px solid var(--acc);outline-off
 <p class="intro">Unlimited week, Oct 14–20. <b>Keep one image and one video job running at all times.</b> Work top to bottom and tick each card off when it's done.</p>
 <p class="intro"><b>Canon notes from your brand bible:</b> HOSHOKU is one stitched rabbit-fox character. Bunni is the rabbit half with the red eye and diamond mark. Renard is the fox half with the cyan eye and X scar. Every HOSHOKU prompt already has the full locked description built in. No neon. Nason and Niko aren't locked yet, so they're left out. Your bible flags an eye-color conflict as unresolved. These prompts use the locked version, so confirm it if anything looks off.</p>
 <ol class="flow">
-<li>Make <b>H0</b> first. After that, attach the master sheet to every HOSHOKU card so he stays on-model.</li>
-<li>Tap the product chip, long-press the image and save it to Photos.</li>
-<li>In Higgsfield, pick the image model shown with Unlimited on. Tap <b>+</b> to attach the photo, paste the image prompt and run it 2–4 times.</li>
-<li>While those run, start the previous card's video. Switch to <b>Wan 3.0</b>, attach your best image as the start frame and paste the video prompt.</li>
-<li>Save the winners to folders: site, stream, social.</li>
+<li><b>Run C1 first.</b> It's the master HOSHOKU sheet. Every card with an "Output C1" chip needs it attached.</li>
+<li>Reference chips show where each file lives: Drive, Canva, Shopify, or your Higgsfield uploads. Open the chip, save the image, then tap <b>+</b> in Higgsfield to attach it.</li>
+<li>Run the image step 2–4 times on the model shown, with Unlimited on.</li>
+<li>While those run, start the Wan 3.0 video for the last card that has a finished image. Keep one image job and one video job going at all times.</li>
+<li>Save each result to the folder named in its "Goes to" line.</li>
 </ol>
 %%CARDS%%
 <p class="muted">Finished the list? Loop back and run every card again in the other aspect ratio, 16:9 ↔ 9:16. The Dante and Killua looks are fan-cosplay style, so keep them on social and leave them out of paid ads.</p>
